@@ -10,6 +10,7 @@ load_dotenv()
 
 from database import Database
 from crawler_brand import crawl_with_fallback, BrandCrawler
+from crawler_smzdm import crawl_smzdm
 from slack_notify import SlackNotifier
 
 def crawl_once(slack_notify=True):
@@ -19,8 +20,15 @@ def crawl_once(slack_notify=True):
     print("=" * 50)
     
     try:
-        # 使用新爬虫 (品牌官网 + 京东API)
-        results = crawl_with_fallback()
+        # 使用什么值得买爬虫
+        print("\n[1] 爬取什么值得买...")
+        results = crawl_smzdm()
+        
+        # 如果 SMZDM 数据少，尝试品牌官网
+        if len(results) < 5:
+            print("\n[2] 尝试品牌官网...")
+            brand_products = BrandCrawler().crawl_all()
+            results.extend(brand_products)
         
         if not results:
             print("\n⚠️ 未能获取到数据，可能原因:")
