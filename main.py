@@ -10,19 +10,25 @@ load_dotenv()
 
 from database import Database
 from crawler_jd import crawl_jd_union
-from crawler_smzdm import crawl_smzdm
+from crawler_sample import generate_sample_products, get_sample_stats
 from slack_notify import SlackNotifier
 
 def crawl_once(slack_notify=True):
     """执行一次爬取"""
     print("=" * 50)
-    print("开始爬取京东商品...")
+    print("开始爬取智能家居价格...")
     print("=" * 50)
     
     try:
-        # 使用京东联盟爬虫
+        # 尝试爬取京东
         print("\n[1] 爬取京东商城...")
         results = crawl_jd_union()
+        
+        # 如果获取不到数据，使用示例数据
+        if len(results) < 3:
+            print("\n⚠️ 无法获取真实数据，使用示例数据演示...")
+            results = generate_sample_products()
+            print(f"  ✅ 生成 {len(results)} 个示例产品")
         
         if not results:
             print("\n⚠️ 未能获取到数据，可能原因:")
@@ -51,7 +57,10 @@ def crawl_once(slack_notify=True):
             )
         
         # 获取统计
-        stats = db.get_statistics()
+        if results and results[0].get("platform") == "sample":
+            stats = get_sample_stats()
+        else:
+            stats = db.get_statistics()
         
         # 获取产品列表
         products = db.get_all_products()
