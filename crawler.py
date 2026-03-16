@@ -72,7 +72,7 @@ class JDVacuumsCrawler(BaseCrawler):
     
     PLATFORM = "jd"
     
-    def crawl(self, keywords):
+    def crawl(self, keywords, category="扫地机器人"):
         """爬取京东扫地机器人"""
         products = []
         
@@ -116,7 +116,7 @@ class JDVacuumsCrawler(BaseCrawler):
                             "product_id": product_id,
                             "name": name,
                             "brand": self._extract_brand(name),
-                            "category": "扫地机器人",
+                            "category": category,
                             "url": url,
                             "image_url": image_url,
                             "price": price,
@@ -145,7 +145,7 @@ class TmallCrawler(BaseCrawler):
     
     PLATFORM = "tmall"
     
-    def crawl(self, keywords):
+    def crawl(self, keywords, category="扫地机器人"):
         """爬取天猫商品"""
         products = []
         
@@ -179,7 +179,7 @@ class TmallCrawler(BaseCrawler):
                                 "product_id": product_id,
                                 "name": name,
                                 "brand": self._extract_brand(name),
-                                "category": "扫地机器人",
+                                "category": category,
                                 "url": url,
                                 "image_url": image_url,
                                 "price": price,
@@ -276,7 +276,7 @@ class SuningCrawler(BaseCrawler):
     
     PLATFORM = "suning"
     
-    def crawl(self, keywords):
+    def crawl(self, keywords, category="扫地机器人"):
         """爬取苏宁易购商品"""
         products = []
         
@@ -322,7 +322,7 @@ class SuningCrawler(BaseCrawler):
                             "product_id": product_id,
                             "name": name,
                             "brand": self._extract_brand(name),
-                            "category": "扫地机器人",
+                            "category": category,
                             "url": url,
                             "image_url": image_url,
                             "price": price,
@@ -363,35 +363,36 @@ class CrawlerScheduler:
         """运行所有爬虫"""
         categories = self.config.get("categories", [])
         
-        # 获取所有品类关键词
-        keywords = []
-        for cat in categories:
-            if cat["name"] == "扫地机器人":
-                keywords.extend([b for b in cat.get("brands", [])])
-                keywords.append("扫地机器人")
-        
         results = []
         
-        # 京东爬虫
-        print("正在爬取京东...")
-        jd_products = self.crawlers["jd"].crawl(keywords)
-        results.extend(jd_products)
-        print(f"京东: 获取 {len(jd_products)} 个商品")
-        
-        # 天猫爬虫
-        print("正在爬取天猫...")
-        tmall_products = self.crawlers["tmall"].crawl(keywords)
-        results.extend(tmall_products)
-        print(f"天猫: 获取 {len(tmall_products)} 个商品")
-        
-        # 苏宁易购爬虫
-        print("正在爬取苏宁易购...")
-        suning_products = self.crawlers["suning"].crawl(keywords)
-        results.extend(suning_products)
-        print(f"苏宁: 获取 {len(suning_products)} 个商品")
+        # 按品类分别爬取
+        for cat in categories:
+            category_name = cat["name"]
+            brands = cat.get("brands", [])
+            # 品类名作为关键词
+            keywords = brands + [category_name]
+            
+            print(f"\n📦 正在爬取: {category_name}")
+            
+            # 京东爬虫
+            print(f"  - 京东...")
+            jd_products = self.crawlers["jd"].crawl(keywords, category_name)
+            results.extend(jd_products)
+            
+            # 天猫爬虫
+            print(f"  - 天猫...")
+            tmall_products = self.crawlers["tmall"].crawl(keywords, category_name)
+            results.extend(tmall_products)
+            
+            # 苏宁易购爬虫
+            print(f"  - 苏宁...")
+            suning_products = self.crawlers["suning"].crawl(keywords, category_name)
+            results.extend(suning_products)
+            
+            print(f"  {category_name}: 获取 {len(jd_products) + len(tmall_products) + len(suning_products)} 个商品")
         
         # 保存到数据库
-        print("正在保存数据...")
+        print("\n正在保存数据...")
         for product in results:
             db.upsert_product(
                 product["product_id"],
@@ -408,7 +409,7 @@ class CrawlerScheduler:
                 product["platform"]
             )
         
-        print(f"完成! 共获取 {len(results)} 个商品")
+        print(f"\n✅ 完成! 共获取 {len(results)} 个商品")
         return results
 
 
