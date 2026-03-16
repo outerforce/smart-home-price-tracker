@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>价格趋势 - 智能家居价格监控</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🏠 智能家居价格监控系统</h1>
+        <nav>
+            <a href="index.html">首页</a>
+            <a href="products.html">产品列表</a>
+            <a href="price_history.html" class="active">价格趋势</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="chart-section">
+            <h2>📊 价格趋势图</h2>
+            <select id="product-select">
+                <option value="">选择产品...</option>
+                <option value="1">科沃斯T20 Pro</option>
+                <option value="2">石头G10S</option>
+                <option value="3">小米扫地机器人2</option>
+            </select>
+            <select id="days-select">
+                <option value="7">最近7天</option>
+                <option value="30" selected>最近30天</option>
+                <option value="90">最近90天</option>
+            </select>
+            <div class="chart-container">
+                <canvas id="priceChart"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        let priceChart = null;
+
+        const mockData = {
+            "1": {
+                label: "科沃斯T20 Pro",
+                prices: [4299, 4199, 4099, 3999, 3999, 3899, 3999, 4099, 3999, 3999],
+                dates: ['3月6日', '3月8日', '3月10日', '3月12日', '3月14日', '3月15日', '3月16日', '3月17日', '3月18日', '3月19日']
+            },
+            "2": {
+                label: "石头G10S",
+                prices: [3599, 3499, 3499, 3399, 3499, 3499, 3499, 3599, 3499, 3499],
+                dates: ['3月6日', '3月8日', '3月10日', '3月12日', '3月14日', '3月15日', '3月16日', '3月17日', '3月18日', '3月19日']
+            },
+            "3": {
+                label: "小米扫地机器人2",
+                prices: [1999, 1899, 1899, 1999, 1899, 1899, 1999, 1999, 1899, 1999],
+                dates: ['3月6日', '3月8日', '3月10日', '3月12日', '3月14日', '3月15日', '3月16日', '3月17日', '3月18日', '3月19日']
+            }
+        };
+
+        function renderChart(productId) {
+            const data = mockData[productId];
+            if (!data) return;
+
+            const ctx = document.getElementById('priceChart').getContext('2d');
+            
+            if (priceChart) {
+                priceChart.destroy();
+            }
+
+            priceChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: data.dates,
+                    datasets: [{
+                        label: data.label + ' 价格走势',
+                        data: data.prices,
+                        borderColor: '#4F46E5',
+                        backgroundColor: 'rgba(79, 70, 229, 0.1)',
+                        fill: true,
+                        tension: 0.3
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'top' }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            title: { display: true, text: '价格 (元)' }
+                        }
+                    }
+                }
+            });
+        }
+
+        document.getElementById('product-select').addEventListener('change', (e) => {
+            if (e.target.value) {
+                renderChart(e.target.value);
+            }
+        });
+
+        // 默认显示第一个产品
+        renderChart("1");
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+# 智能家居价格监控系统配置
+
+# 爬虫配置
+crawler:
+  # 请求间隔 (秒)
+  delay: 3
+  # 重试次数
+  max_retries: 3
+  # 请求超时 (秒)
+  timeout: 30
+  # User-Agent
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+# 定时任务配置
+scheduler:
+  # 爬取间隔 (小时)
+  interval_hours: 6
+  # 启用定时任务
+  enabled: true
+
+# 数据库配置
+database:
+  # SQLite 文件路径
+  path: "data/prices.db"
+
+# 目标品类
+categories:
+  - name: "扫地机器人"
+    brands:
+      - "科沃斯"
+      - "石头"
+      - "小米"
+      - "追觅"
+      - "云鲸"
+      - "美的"
+      - "海尔"
+      - "360"
+  - name: "智能门锁"
+    brands:
+      - "小米"
+      - "德施曼"
+      - "凯迪仕"
+      - "鹿客"
+      - "飞利浦"
+  - name: "智能音箱"
+    brands:
+      - "小米"
+      - "小度"
+      - "天猫精灵"
+      - "华为"
+  - name: "智能空调"
+    brands:
+      - "小米"
+      - "格力"
+      - "美的"
+      - "海尔"
+
+# 爬取平台 (jd/tmall/suning/brands)
+platforms:
+  - jd
+  - tmall
+  - suning
+  - brands

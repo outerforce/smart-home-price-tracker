@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品列表 - 智能家居价格监控</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <h1>🏠 智能家居价格监控系统</h1>
+        <nav>
+            <a href="index.html">首页</a>
+            <a href="products.html" class="active">产品列表</a>
+            <a href="price_history.html">价格趋势</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filters">
+            <select id="category-filter">
+                <option value="">全部品类</option>
+                <option value="扫地机器人">扫地机器人</option>
+                <option value="智能门锁">智能门锁</option>
+                <option value="智能音箱">智能音箱</option>
+                <option value="智能空调">智能空调</option>
+            </select>
+            <select id="brand-filter">
+                <option value="">全部品牌</option>
+                <option value="科沃斯">科沃斯</option>
+                <option value="石头">石头</option>
+                <option value="小米">小米</option>
+                <option value="追觅">追觅</option>
+                <option value="云鲸">云鲸</option>
+            </select>
+            <input type="text" id="search-input" placeholder="搜索产品...">
+        </section>
+
+        <section class="products-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>品牌</th>
+                        <th>产品名称</th>
+                        <th>品类</th>
+                        <th>现价</th>
+                        <th>历史最低</th>
+                        <th>参数</th>
+                    </tr>
+                </thead>
+                <tbody id="products-tbody">
+                    <tr><td colspan="6">加载中...</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script>
+        const mockProducts = [
+            { brand: "科沃斯", name: "科沃斯T20 Pro 扫拖一体机器人", category: "扫地机器人", price: 3999, lowest: 3599, specs: { "吸力": "6000Pa", "续航": "180分钟", "导航": "激光" }},
+            { brand: "石头", name: "石头G10S 自动集尘扫拖机器人", category: "扫地机器人", price: 3499, lowest: 3299, specs: { "吸力": "5100Pa", "续航": "150分钟", "导航": "激光" }},
+            { brand: "小米", name: "小米扫地机器人2", category: "扫地机器人", price: 1999, lowest: 1799, specs: { "吸力": "4000Pa", "续航": "110分钟", "导航": "激光" }},
+            { brand: "追觅", name: "追觅S20 Pro", category: "扫地机器人", price: 4299, lowest: 3999, specs: { "吸力": "6000Pa", "续航": "180分钟", "导航": "AI视觉" }},
+            { brand: "云鲸", name: "云鲸J3", category: "扫地机器人", price: 3699, lowest: 3499, specs: { "吸力": "3000Pa", "续航": "120分钟", "导航": "激光" }}
+        ];
+
+        function renderProducts(products) {
+            const tbody = document.getElementById('products-tbody');
+            tbody.innerHTML = products.map(p => `
+                <tr>
+                    <td>${p.brand}</td>
+                    <td>${p.name}</td>
+                    <td>${p.category}</td>
+                    <td class="price">¥${p.price}</td>
+                    <td class="lowest">¥${p.lowest}</td>
+                    <td><button class="spec-btn" data-specs='${JSON.stringify(p.specs)}'>查看</button></td>
+                </tr>
+            `).join('');
+            
+            document.querySelectorAll('.spec-btn').forEach(btn => {
+                btn.onclick = () => {
+                    const specs = JSON.parse(btn.dataset.specs);
+                    alert(Object.entries(specs).map(([k,v]) => k + ': ' + v).join('\n'));
+                };
+            });
+        }
+
+        renderProducts(mockProducts);
+
+        document.getElementById('search-input').addEventListener('input', (e) => {
+            const keyword = e.target.value.toLowerCase();
+            renderProducts(mockProducts.filter(p => p.name.toLowerCase().includes(keyword)));
+        });
+    </script>
+</body>
+</html>

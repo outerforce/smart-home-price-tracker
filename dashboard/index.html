@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能家居价格监控</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🏠 智能家居价格监控系统</h1>
+        <nav>
+            <a href="index.html" class="active">首页</a>
+            <a href="products.html">产品列表</a>
+            <a href="price_history.html">价格趋势</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="stats">
+            <div class="stat-card">
+                <h3>总产品数</h3>
+                <p class="stat-number" id="total-products">-</p>
+            </div>
+            <div class="stat-card">
+                <h3>今日更新</h3>
+                <p class="stat-number" id="today-updates">-</p>
+            </div>
+            <div class="stat-card">
+                <h3>价格变动</h3>
+                <p class="stat-number" id="price-changes">-</p>
+            </div>
+        </section>
+
+        <section class="recent-changes">
+            <h2>📈 最近价格变动</h2>
+            <div id="changes-list">加载中...</div>
+        </section>
+    </main>
+
+    <script>
+        // 模拟数据 - 实际使用时连接数据库
+        const mockStats = {
+            total_products: 156,
+            today_updates: 23,
+            price_changes: 8
+        };
+
+        const mockChanges = [
+            { brand: "科沃斯", name: "科沃斯T20 Pro", current: 3999, previous: 4299, time: "2小时前" },
+            { brand: "石头", name: "石头G10S", current: 3499, previous: 3499, time: "5小时前" },
+            { brand: "小米", name: "小米扫地机器人2", current: 1999, previous: 1899, time: "昨天" }
+        ];
+
+        document.getElementById('total-products').textContent = mockStats.total_products;
+        document.getElementById('today-updates').textContent = mockStats.today_updates;
+        document.getElementById('price-changes').textContent = mockStats.price_changes;
+
+        const changesList = document.getElementById('changes-list');
+        changesList.innerHTML = mockChanges.map(item => `
+            <div class="change-item">
+                <span class="brand">${item.brand}</span>
+                <span class="name">${item.name}</span>
+                <span class="price">¥${item.previous} → ¥${item.current}</span>
+                <span class="time">${item.time}</span>
+            </div>
+        `).join('');
+    </script>
+</body>
+</html>
