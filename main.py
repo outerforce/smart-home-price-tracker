@@ -9,48 +9,65 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from database import Database
-from crawler import CrawlerScheduler
+from crawler_brand import crawl_with_fallback, BrandCrawler
 from slack_notify import SlackNotifier
 
 def crawl_once(slack_notify=True):
     """执行一次爬取"""
     print("=" * 50)
-    print("开始爬取...")
+    print("开始爬取智能家居价格...")
     print("=" * 50)
     
     try:
+        # 使用新爬虫 (品牌官网 + 京东API)
+        results = crawl_with_fallback()
+        
+        if not results:
+            print("\n⚠️ 未能获取到数据，可能原因:")
+            print("  1. 网络连接问题")
+            print("  2. 网站反爬措施")
+            print("  3. 网站结构变化")
+            return []
+        
+        # 保存到数据库
         db = Database()
-        scheduler = CrawlerScheduler()
-        results = scheduler.crawl_all(db)
+        
+        for product in results:
+            db.upsert_product(
+                product["product_id"],
+                product["name"],
+                product["brand"],
+                product["category"],
+                product["url"],
+                product["image_url"],
+                product["specs"]
+            )
+            db.insert_price(
+                product["product_id"],
+                product["price"],
+                product["platform"]
+            )
         
         # 获取统计
         stats = db.get_statistics()
         
-        # 获取最近产品（用于展示）
+        # 获取产品列表
         products = db.get_all_products()
         for p in products[:20]:
             latest = db.get_latest_price(p["product_id"])
             if latest:
                 p["price"] = latest["price"]
-                p["platform"] = latest["platform"]
         
         db.close()
         
-        print(f"爬取完成! 共获取 {len(results)} 个商品")
+        print(f"\n✅ 爬取完成! 共获取 {len(results)} 个商品")
         
         # 发送 Slack 通知
         if slack_notify:
             notifier = SlackNotifier()
-            # 如果配置了 webhook
             if notifier.webhook_url:
                 notifier.send_price_update(products[:15], stats)
                 print("✅ 已发送 Slack 通知")
-            else:
-                # 输出消息供手动发送
-                print("\n" + "=" * 50)
-                print("Slack 消息预览 (配置 SLACK_WEBHOOK_URL 自动发送):")
-                print("=" * 50)
-                print(notifier.format_products_message(products[:15]))
         
         return results
         
