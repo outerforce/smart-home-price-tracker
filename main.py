@@ -2,10 +2,15 @@
 智能家居价格监控系统 - 主入口
 """
 import argparse
+import os
+from dotenv import load_dotenv
+
+# 加载环境变量
+load_dotenv()
+
 from database import Database
 from crawler import CrawlerScheduler
 from slack_notify import SlackNotifier
-import os
 
 def crawl_once(slack_notify=True):
     """执行一次爬取"""
