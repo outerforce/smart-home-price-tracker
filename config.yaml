@@ -9,7 +9,7 @@ crawler:
 
 # 定时任务配置
 scheduler:
-  interval_hours: 6
+  interval_hours: 24
   enabled: true
 
 # 数据库配置
