@@ -1,12 +1,13 @@
 """
-智能家居价格爬虫 - 示例数据版
-当无法爬取真实数据时，使用示例数据演示
+智能家居价格爬虫 - 默认使用示例数据
+需要真实数据时请确保已安装 requests: pip install requests
 """
 import random
+import hashlib
 from datetime import datetime
 
 
-# 示例产品数据
+# 示例产品数据 - 真实产品信息
 SAMPLE_PRODUCTS = [
     # 扫地机器人
     {"brand": "科沃斯", "name": "科沃斯T20 PRO 扫拖一体机器人", "category": "扫地机器人", "price": 3999, "specs": {"吸力": "6000Pa", "续航": "180分钟", "导航": "激光导航"}},
@@ -52,12 +53,10 @@ SAMPLE_PRODUCTS = [
 
 def generate_sample_products():
     """生成示例产品数据"""
-    import hashlib
-    
     products = []
     
     for i, p in enumerate(SAMPLE_PRODUCTS):
-        # 添加价格波动 (±10%)
+        # 添加随机价格波动 (±10%)
         price_variation = random.uniform(-0.1, 0.1)
         current_price = int(p["price"] * (1 + price_variation))
         previous_price = p["price"]
@@ -94,6 +93,34 @@ def get_sample_stats():
     }
 
 
+def crawl_with_fallback():
+    """
+    爬取数据 - 带备用方案
+    优先尝试真实爬取，失败时使用示例数据
+    """
+    print("尝试获取真实数据...")
+    
+    # 尝试导入并使用真实爬虫
+    try:
+        from crawler_jd import crawl_jd_union
+        results = crawl_jd_union()
+        
+        if results and len(results) >= 3:
+            print(f"✅ 成功获取 {len(results)} 个真实商品")
+            return results
+    except ImportError:
+        print("⚠️ 未安装 requests 模块")
+    except Exception as e:
+        print(f"⚠️ 爬取失败: {e}")
+    
+    # 回退到示例数据
+    print("使用示例数据...")
+    results = generate_sample_products()
+    print(f"✅ 生成 {len(results)} 个示例产品")
+    return results
+
+
 if __name__ == "__main__":
-    products = generate_sample_stats()
-    print(products)
+    products = crawl_with_fallback()
+    for p in products[:5]:
+        print(f"  {p['brand']} - {p['name'][:35]}... ¥{p['price']}")

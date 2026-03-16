@@ -9,9 +9,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from database import Database
-from crawler_jd import crawl_jd_union
-from crawler_sample import generate_sample_products, get_sample_stats
+from crawler_sample import crawl_with_fallback, generate_sample_products, get_sample_stats
 from slack_notify import SlackNotifier
+
 
 def crawl_once(slack_notify=True):
     """执行一次爬取"""
@@ -20,22 +20,15 @@ def crawl_once(slack_notify=True):
     print("=" * 50)
     
     try:
-        # 尝试爬取京东
-        print("\n[1] 爬取京东商城...")
-        results = crawl_jd_union()
-        
-        # 如果获取不到数据，使用示例数据
-        if len(results) < 3:
-            print("\n⚠️ 无法获取真实数据，使用示例数据演示...")
-            results = generate_sample_products()
-            print(f"  ✅ 生成 {len(results)} 个示例产品")
+        # 使用带备用方案的爬虫
+        results = crawl_with_fallback()
         
         if not results:
-            print("\n⚠️ 未能获取到数据，可能原因:")
-            print("  1. 网络连接问题")
-            print("  2. 网站反爬措施")
-            print("  3. 网站结构变化")
+            print("\n⚠️ 未能获取到数据")
             return []
+        
+        # 判断是否为示例数据
+        is_sample = results and results[0].get("platform") == "sample"
         
         # 保存到数据库
         db = Database()
@@ -46,18 +39,18 @@ def crawl_once(slack_notify=True):
                 product["name"],
                 product["brand"],
                 product["category"],
-                product["url"],
-                product["image_url"],
-                product["specs"]
+                product.get("url", ""),
+                product.get("image_url", ""),
+                product.get("specs", {})
             )
             db.insert_price(
                 product["product_id"],
                 product["price"],
-                product["platform"]
+                product.get("platform", "sample")
             )
         
         # 获取统计
-        if results and results[0].get("platform") == "sample":
+        if is_sample:
             stats = get_sample_stats()
         else:
             stats = db.get_statistics()
@@ -88,6 +81,7 @@ def crawl_once(slack_notify=True):
         traceback.print_exc()
         return []
 
+
 def stats():
     """显示统计信息"""
     db = Database()
@@ -105,32 +99,33 @@ def stats():
     
     db.close()
 
+
 def list_products(category=None, brand=None):
     """列出产品"""
     db = Database()
     products = db.get_all_products(category, brand)
     
     print("=" * 80)
-    print(f"{'品牌':<10} {'产品名称':<40} {'现价':<10} {'平台':<10}")
+    print(f"{'品牌':<10} {'产品名称':<40} {'现价':<10}")
     print("=" * 80)
     
     for p in products[:50]:
         latest = db.get_latest_price(p["product_id"])
         price = latest["price"] if latest else "N/A"
-        platform = latest["platform"] if latest else "N/A"
         
         name = p["name"][:38] + ".." if len(p["name"]) > 40 else p["name"]
-        print(f"{p['brand']:<10} {name:<40} {price:<10} {platform:<10}")
+        print(f"{p['brand']:<10} {name:<40} ¥{price}")
     
     print("=" * 80)
     print(f"共 {len(products)} 个产品")
     
     db.close()
 
+
 def notify_slack():
     """手动触发 Slack 通知"""
     db = Database()
-    stats = db.get_statistics()
+    stats_data = db.get_statistics()
     products = db.get_all_products()
     
     for p in products[:20]:
@@ -141,21 +136,20 @@ def notify_slack():
     notifier = SlackNotifier()
     
     if notifier.webhook_url:
-        success = notifier.send_price_update(products[:15], stats)
+        success = notifier.send_price_update(products[:15], stats_data)
         if success:
             print("✅ Slack 通知已发送!")
         else:
             print("❌ Slack 通知发送失败")
     else:
         print("⚠️ 请设置 SLACK_WEBHOOK_URL 环境变量")
-        print("\n消息预览:")
-        print(notifier.format_products_message(products[:15]))
     
     db.close()
 
+
 def main():
     parser = argparse.ArgumentParser(description="智能家居价格监控系统")
-    parser.add_argument("command", choices=["crawl", "monitor", "stats", "list", "notify"])
+    parser.add_argument("command", choices=["crawl", "stats", "list", "notify"])
     parser.add_argument("--category", "-c", help="筛选品类")
     parser.add_argument("--brand", "-b", help="筛选品牌")
     parser.add_argument("--no-slack", action="store_true", help="不发送 Slack 通知")
@@ -170,8 +164,7 @@ def main():
         list_products(args.category, args.brand)
     elif args.command == "notify":
         notify_slack()
-    elif args.command == "monitor":
-        print("定时监控功能开发中...")
+
 
 if __name__ == "__main__":
     main()
