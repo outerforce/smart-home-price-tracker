@@ -1,0 +1,268 @@
+# Source URL: https://deepwiki.com/soimy/openclaw-channel-dingtalk/2-getting-started
+# Content Length: 14002 characters
+# Extracted at: 2026-03-16 16:51:09
+#============================================================
+
+
+Getting Started | soimy/openclaw-channel-dingtalk | DeepWikiLoading...Index your code with Devin[DeepWiki](/)[DeepWiki](/)
+
+[soimy/openclaw-channel-dingtalk](https://github.com/soimy/openclaw-channel-dingtalk) 
+
+Index your code withDevinEdit WikiShareLoading...Last indexed: 1 February 2026 ([80bc88](https://github.com/soimy/openclaw-channel-dingtalk/commits/80bc8864))
+
+* [Overview](/soimy/openclaw-channel-dingtalk/1-overview)
+* [Getting Started](/soimy/openclaw-channel-dingtalk/2-getting-started)
+* [Installation](/soimy/openclaw-channel-dingtalk/2.1-installation)
+* [Configuration](/soimy/openclaw-channel-dingtalk/2.2-configuration)
+* [Architecture](/soimy/openclaw-channel-dingtalk/3-architecture)
+* [Plugin Integration](/soimy/openclaw-channel-dingtalk/3.1-plugin-integration)
+* [Core Components](/soimy/openclaw-channel-dingtalk/3.2-core-components)
+* [Message Flow](/soimy/openclaw-channel-dingtalk/3.3-message-flow)
+* [Type System](/soimy/openclaw-channel-dingtalk/3.4-type-system)
+* [State Management](/soimy/openclaw-channel-dingtalk/3.5-state-management)
+* [Configuration Reference](/soimy/openclaw-channel-dingtalk/4-configuration-reference)
+* [Authentication Settings](/soimy/openclaw-channel-dingtalk/4.1-authentication-settings)
+* [Security Policies](/soimy/openclaw-channel-dingtalk/4.2-security-policies)
+* [Message Type Configuration](/soimy/openclaw-channel-dingtalk/4.3-message-type-configuration)
+* [Multi-Account Setup](/soimy/openclaw-channel-dingtalk/4.4-multi-account-setup)
+* [Core Features](/soimy/openclaw-channel-dingtalk/5-core-features)
+* [Stream Mode Integration](/soimy/openclaw-channel-dingtalk/5.1-stream-mode-integration)
+* [Interactive Cards](/soimy/openclaw-channel-dingtalk/5.2-interactive-cards)
+* [Media Handling](/soimy/openclaw-channel-dingtalk/5.3-media-handling)
+* [Message Processing](/soimy/openclaw-channel-dingtalk/5.4-message-processing)
+* [API Reference](/soimy/openclaw-channel-dingtalk/6-api-reference)
+* [Public Functions](/soimy/openclaw-channel-dingtalk/6.1-public-functions)
+* [Type Definitions](/soimy/openclaw-channel-dingtalk/6.2-type-definitions)
+* [Plugin Interface](/soimy/openclaw-channel-dingtalk/6.3-plugin-interface)
+* [Development Guide](/soimy/openclaw-channel-dingtalk/7-development-guide)
+* [Development Setup](/soimy/openclaw-channel-dingtalk/7.1-development-setup)
+* [Code Structure](/soimy/openclaw-channel-dingtalk/7.2-code-structure)
+* [Utilities and Helpers](/soimy/openclaw-channel-dingtalk/7.3-utilities-and-helpers)
+* [Build and Quality Tools](/soimy/openclaw-channel-dingtalk/7.4-build-and-quality-tools)
+Menu
+
+Getting Started
+===============
+
+Relevant source files
+
+* [README.md](https://github.com/soimy/openclaw-channel-dingtalk/blob/80bc8864/README.md)
+* [package.json](https://github.com/soimy/openclaw-channel-dingtalk/blob/80bc8864/package.json)
+
+This document guides you through the initial setup of the DingTalk Channel plugin for OpenClaw, from installation to running your first bot conversation. By the end of this guide, you will have a working DingTalk bot that can receive messages via Stream Mode and respond using OpenClaw's AI pipeline.
+
+For detailed installation instructions, see [Installation](/soimy/openclaw-channel-dingtalk/2.1-installation). For comprehensive configuration options, see [Configuration](/soimy/openclaw-channel-dingtalk/2.2-configuration).
+
+---
+
+Prerequisites
+-------------
+
+Before installing the DingTalk Channel plugin, ensure you have:
+
+| Requirement | Description | Verification Command |
+| --- | --- | --- |
+| OpenClaw Platform | OpenClaw core runtime installed | `openclaw --version` |
+| Node.js | Version 16+ with npm | `node --version` |
+| DingTalk Application | Enterprise Internal Application with Robot capability | N/A - Created via DingTalk Developer Console |
+| Network Access | Outbound HTTPS access to `api.dingtalk.com` | `curl https://api.dingtalk.com` |
+
+**Note**: Unlike webhook-based integrations, Stream Mode does **not** require a public IP address or exposed webhook endpoint. The plugin establishes an outbound WebSocket connection to DingTalk's servers.
+
+Sources: [README.md1-15](https://github.com/soimy/openclaw-channel-dingtalk/blob/80bc8864/README.md#L1-L15)
+
+---
+
+Quick Start Workflow
+--------------------
+
+The setup process consists of three phases: DingTalk application creation, plugin installation, and configuration.
+
+Sources: [README.md47-99](https://github.com/soimy/openclaw-channel-dingtalk/blob/80bc8864/README.md#L47-L99) [package.json37-63](https://github.com/soimy/openclaw-channel-dingtalk/blob/80bc8864/package.json#L37-L63)
+
+---
+
+Installation Methods
+--------------------
+
+The plugin supports three installation methods, all of which automatically handle dependency installation through npm.
+
+### Method Comparison
+
+| Method | Use Case | Command | Auto-update |
+| --- | --- | --- | --- |
+| **Remote Repository** | Production deployment | `openclaw plugins install https://github.com/soimy/openclaw-channel-dingtalk.git` | No |
+| **Local Source** | Development/customization | `openclaw plugins install -l .` | Yes (linked) |
+| **Manual** | Advanced/offline setup | Copy to `~/.openclaw/extensions/dingtalk` | No |
+
+**Recommended**: Use the remote repository method for production deployments. It ensures OpenClaw handles the complete installation pipeline including dependency resolution.
+
+For detailed instructions on each method, see [Installation](/soimy/openclaw-channel-dingtalk/2.1-installation).
+
+Sources: [README.md15-45](https://github.com/soimy/openclaw-channel-dingtalk/blob/80bc8864/README.md#L15-L45) [package.json37-90](https://github.com/soimy/openclaw-channel-dingtalk/blob/80bc8864/package.json#L37-L90)
+
+---
+
+Configuration Overview
+----------------------
+
+Configuration is performed by editing `~/.openclaw/clawdbot.json` and adding a `dingtalk` section under the `channels` object. The configuration schema is validated by `DingTalkConfigSchema` defined in [src/config-schema.ts1-50](https://github.com/soimy/openclaw-channel-dingtalk/blob/80bc8864/src/config-schema.ts#L1-L50)
+
+### Credential Mapping
+
+Credentials are obtained from the DingTalk Developer Console and must be mapped to configuration fields:
+
+| DingTalk Console Label | Config Field | Type | Example | Required |
+| --- | --- | --- | --- | --- |
+| AppKey / Client ID | `clientId` | string | `"dingxxxxxx"` | Yes |
+| AppSecret / Client Secret | `clientSecret` | string | `"your-secret"` | Yes |
+| Robot Code | `robotCode` | string | `"dingxxxxxx"` | Yes |
+| Corp ID (企业 ID) | `corpId` | string | `"dingxxxxxx"` | Yes |
+| Agent ID (应用 ID) | `agentId` | string | `"123456789"` | Yes |
+
+### Minimal Configuration Example
+
+This minimal configuration enables:
+
+* **Open DM Policy**: Any user can message the bot
+* **Open Group Policy**: Any group can @mention the bot
+* **Markdown Responses**: Formatted text replies (default)
+
+For comprehensive configuration options including security policies, multi-account setup, and interactive cards, see [Configuration](/soimy/openclaw-channel-dingtalk/2.2-configuration) and [Configuration Reference](/soimy/openclaw-channel-dingtalk/4-configuration-reference).
+
+Sources: [README.md47-93](https://github.com/soimy/openclaw-channel-dingtalk/blob/80bc8864/README.md#L47-L93) [README.md101-118](https://github.com/soimy/openclaw-channel-dingtalk/blob/80bc8864/README.md#L101-L118)
+
+---
+
+Configuration to Code Mapping
+-----------------------------
+
+The following diagram shows how configuration fields flow through the plugin's type system and are used by runtime components:
+
+### Key Code Entities
+
+* **DingTalkConfigSchema**: [src/config-schema.ts1-50](https://github.com/soimy/openclaw-channel-dingtalk/blob/80bc8864/src/config-schema.ts#L1-L50) - Zod schema for validation
+* **DingTalkConfig**: [src/types.ts1-50](https://github.com/soimy/openclaw-channel-dingtalk/blob/80bc8864/src/types.ts#L1-L50) - TypeScript interface for config structure
+* **ResolvedAccount**: [src/types.ts50-100](https://github.com/soimy/openclaw-channel-dingtalk/blob/80bc8864/src/types.ts#L50-L100) - Runtime configuration object
+* **getAccessToken()**: [src/channel.ts50-100](https://github.com/soimy/openclaw-channel-dingtalk/blob/80bc8864/src/channel.ts#L50-L100) - Authenticates using `clientId` and `clientSecret`
+* **authorizeDingTalkMessage()**: [src/channel.ts200-250](https://github.com/soimy/openclaw-channel-dingtalk/blob/80bc8864/src/channel.ts#L200-L250) - Enforces `dmPolicy` and `groupPolicy`
+* **sendMessage()**: [src/channel.ts400-450](https://github.com/soimy/openclaw-channel-dingtalk/blob/80bc8864/src/channel.ts#L400-L450) - Routes based on `messageType`
+
+Sources: [README.md67-93](https://github.com/soimy/openclaw-channel-dingtalk/blob/80bc8864/README.md#L67-L93) [README.md274-294](https://github.com/soimy/openclaw-channel-dingtalk/blob/80bc8864/README.md#L274-L294)
+
+---
+
+Verification Steps
+------------------
+
+After installation and configuration, verify the plugin is working correctly:
+
+### 1. Check Plugin Registration
+
+Expected output should include:
+
+```
+dingtalk    @openclaw/dingtalk    DingTalk (钉钉)    [active]
+
+```
+
+The `[active]` status indicates the plugin is loaded by [index.ts1-29](https://github.com/soimy/openclaw-channel-dingtalk/blob/80bc8864/index.ts#L1-L29) and registered with OpenClaw.
+
+### 2. Start the Gateway
+
+This triggers the gateway lifecycle:
+
+1. Gateway loads all registered plugins
+2. Calls `dingtalkPlugin.startAccount()` defined in [src/channel.ts450-500](https://github.com/soimy/openclaw-channel-dingtalk/blob/80bc8864/src/channel.ts#L450-L500)
+3. Initializes `DWClient` WebSocket connection to `stream.dingtalk.com`
+4. Registers callback for `TOPIC_ROBOT` message events
+
+### 3. Monitor Connection Status
+
+Check the logs for successful Stream Mode connection:
+
+Expected log entries:
+
+```
+[dingtalk] DingTalk Stream client connected
+[dingtalk] Listening for messages on TOPIC_ROBOT
+[dingtalk] Account 'default' started successfully
+
+```
+### 4. Test Message Reception
+
+Send a test message to the bot via DingTalk:
+
+| Test Type | Action | Expected Response |
+| --- | --- | --- |
+| **Direct Message** | Send any text to bot | Bot replies with AI-generated response |
+| **Group Message** | @mention bot in group | Bot replies to the thread/group |
+| **Media Message** | Send an image | Bot downloads image and processes with AI |
+
+If messages are received, the inbound pipeline is working:
+
+* `DWClient` receives WebSocket event
+* `handleDingTalkMessage()` [src/channel.ts150-200](https://github.com/soimy/openclaw-channel-dingtalk/blob/80bc8864/src/channel.ts#L150-L200) processes message
+* `authorizeDingTalkMessage()` [src/channel.ts200-250](https://github.com/soimy/openclaw-channel-dingtalk/blob/80bc8864/src/channel.ts#L200-L250) checks policies
+* Message forwarded to Clawdbot AI pipeline via `runtime.dispatch()`
+
+Sources: [README.md96-99](https://github.com/soimy/openclaw-channel-dingtalk/blob/80bc8864/README.md#L96-L99) [README.md202-220](https://github.com/soimy/openclaw-channel-dingtalk/blob/80bc8864/README.md#L202-L220)
+
+---
+
+Troubleshooting Quick Reference
+-------------------------------
+
+| Symptom | Likely Cause | Verification |
+| --- | --- | --- |
+| Plugin not listed | Installation failed | Check `~/.openclaw/extensions/dingtalk` exists |
+| Gateway won't start | Invalid configuration | Run `openclaw validate` to check JSON syntax |
+| No WebSocket connection | Wrong credentials | Verify `clientId` and `clientSecret` in logs |
+| Messages not received | Stream Mode not enabled | Check DingTalk app configuration in console |
+| Bot doesn't respond | Policy rejection | Check logs for "unauthorized" messages |
+| Group messages ignored | Not @mentioned | Ensure you @mention the bot name in group |
+
+For detailed troubleshooting procedures, see [README.md202-220](https://github.com/soimy/openclaw-channel-dingtalk/blob/80bc8864/README.md#L202-L220)
+
+Sources: [README.md202-220](https://github.com/soimy/openclaw-channel-dingtalk/blob/80bc8864/README.md#L202-L220)
+
+---
+
+Next Steps
+----------
+
+Once the plugin is successfully running:
+
+1. **Customize Security Policies**: See [Security Policies](/soimy/openclaw-channel-dingtalk/4.2-security-policies) to configure `dmPolicy`, `groupPolicy`, and `allowFrom` allowlists
+2. **Enable Interactive Cards**: See [Interactive Cards](/soimy/openclaw-channel-dingtalk/5.2-interactive-cards) and [Message Type Configuration](/soimy/openclaw-channel-dingtalk/4.3-message-type-configuration) to enable real-time streaming responses
+3. **Configure Multi-Account**: See [Multi-Account Setup](/soimy/openclaw-channel-dingtalk/4.4-multi-account-setup) to manage multiple DingTalk applications or environments
+4. **Explore Architecture**: See [Architecture](/soimy/openclaw-channel-dingtalk/3-architecture) to understand the plugin's internal components and message flow
+
+The DingTalk Channel plugin is now ready to route messages between DingTalk users and OpenClaw's AI pipeline.
+
+Sources: [README.md1-345](https://github.com/soimy/openclaw-channel-dingtalk/blob/80bc8864/README.md#L1-L345)
+
+Dismiss
+
+Refresh this wiki
+
+Enter email to refresh
+### On this page
+
+* [Getting Started](#getting-started)
+* [Prerequisites](#prerequisites)
+* [Quick Start Workflow](#quick-start-workflow)
+* [Installation Methods](#installation-methods)
+* [Method Comparison](#method-comparison)
+* [Configuration Overview](#configuration-overview)
+* [Credential Mapping](#credential-mapping)
+* [Minimal Configuration Example](#minimal-configuration-example)
+* [Configuration to Code Mapping](#configuration-to-code-mapping)
+* [Key Code Entities](#key-code-entities)
+* [Verification Steps](#verification-steps)
+* [1. Check Plugin Registration](#1-check-plugin-registration)
+* [2. Start the Gateway](#2-start-the-gateway)
+* [3. Monitor Connection Status](#3-monitor-connection-status)
+* [4. Test Message Reception](#4-test-message-reception)
+* [Troubleshooting Quick Reference](#troubleshooting-quick-reference)
+* [Next Steps](#next-steps)

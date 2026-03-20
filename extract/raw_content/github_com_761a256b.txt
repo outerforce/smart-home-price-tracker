@@ -1,0 +1,1032 @@
+# Source URL: https://github.com/wanikua/danghuangshang
+# Content Length: 26414 characters
+# Extracted at: 2026-03-18 09:45:29
+#============================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GitHub - wanikua/danghuangshang: AI 朝廷搭建完整教程 - 从零基础到进阶 · GitHub
+
+
+
+
+
+
+
+
+
+
+
+
+[Skip to content](#start-of-content)
+
+
+
+
+
+Navigation Menu
+---------------
+
+Toggle navigation
+
+ 
+
+
+
+
+
+
+[Sign in](/login?return_to=https%3A%2F%2Fgithub.com%2Fwanikua%2Fdanghuangshang)
+ 
+
+
+Appearance settings
+
+
+
+
+
+
+
+
+* Platform
+  + AI CODE CREATION
+    - [GitHub CopilotWrite better code with AI](https://github.com/features/copilot)
+    - [GitHub SparkBuild and deploy intelligent apps](https://github.com/features/spark)
+    - [GitHub ModelsManage and compare prompts](https://github.com/features/models)
+    - [MCP RegistryNewIntegrate external tools](https://github.com/mcp)
+  + DEVELOPER WORKFLOWS
+    - [ActionsAutomate any workflow](https://github.com/features/actions)
+    - [CodespacesInstant dev environments](https://github.com/features/codespaces)
+    - [IssuesPlan and track work](https://github.com/features/issues)
+    - [Code ReviewManage code changes](https://github.com/features/code-review)
+  + APPLICATION SECURITY
+    - [GitHub Advanced SecurityFind and fix vulnerabilities](https://github.com/security/advanced-security)
+    - [Code securitySecure your code as you build](https://github.com/security/advanced-security/code-security)
+    - [Secret protectionStop leaks before they start](https://github.com/security/advanced-security/secret-protection)
+  + EXPLORE
+    - [Why GitHub](https://github.com/why-github)
+    - [Documentation](https://docs.github.com)
+    - [Blog](https://github.blog)
+    - [Changelog](https://github.blog/changelog)
+    - [Marketplace](https://github.com/marketplace)[View all features](https://github.com/features)
+* Solutions
+  + BY COMPANY SIZE
+    - [Enterprises](https://github.com/enterprise)
+    - [Small and medium teams](https://github.com/team)
+    - [Startups](https://github.com/enterprise/startups)
+    - [Nonprofits](https://github.com/solutions/industry/nonprofits)
+  + BY USE CASE
+    - [App Modernization](https://github.com/solutions/use-case/app-modernization)
+    - [DevSecOps](https://github.com/solutions/use-case/devsecops)
+    - [DevOps](https://github.com/solutions/use-case/devops)
+    - [CI/CD](https://github.com/solutions/use-case/ci-cd)
+    - [View all use cases](https://github.com/solutions/use-case)
+  + BY INDUSTRY
+    - [Healthcare](https://github.com/solutions/industry/healthcare)
+    - [Financial services](https://github.com/solutions/industry/financial-services)
+    - [Manufacturing](https://github.com/solutions/industry/manufacturing)
+    - [Government](https://github.com/solutions/industry/government)
+    - [View all industries](https://github.com/solutions/industry)[View all solutions](https://github.com/solutions)
+* Resources
+  + EXPLORE BY TOPIC
+    - [AI](https://github.com/resources/articles?topic=ai)
+    - [Software Development](https://github.com/resources/articles?topic=software-development)
+    - [DevOps](https://github.com/resources/articles?topic=devops)
+    - [Security](https://github.com/resources/articles?topic=security)
+    - [View all topics](https://github.com/resources/articles)
+  + EXPLORE BY TYPE
+    - [Customer stories](https://github.com/customer-stories)
+    - [Events & webinars](https://github.com/resources/events)
+    - [Ebooks & reports](https://github.com/resources/whitepapers)
+    - [Business insights](https://github.com/solutions/executive-insights)
+    - [GitHub Skills](https://skills.github.com)
+  + SUPPORT & SERVICES
+    - [Documentation](https://docs.github.com)
+    - [Customer support](https://support.github.com)
+    - [Community forum](https://github.com/orgs/community/discussions)
+    - [Trust center](https://github.com/trust-center)
+    - [Partners](https://github.com/partners)[View all resources](https://github.com/resources)
+* Open Source
+  + COMMUNITY
+    - [GitHub SponsorsFund open source developers](https://github.com/sponsors)
+  + PROGRAMS
+    - [Security Lab](https://securitylab.github.com)
+    - [Maintainer Community](https://maintainers.github.com)
+    - [Accelerator](https://github.com/accelerator)
+    - [GitHub Stars](https://stars.github.com)
+    - [Archive Program](https://archiveprogram.github.com)
+  + REPOSITORIES
+    - [Topics](https://github.com/topics)
+    - [Trending](https://github.com/trending)
+    - [Collections](https://github.com/collections)
+* Enterprise
+  + ENTERPRISE SOLUTIONS
+    - [Enterprise platformAI-powered developer platform](https://github.com/enterprise)
+  + AVAILABLE ADD-ONS
+    - [GitHub Advanced SecurityEnterprise-grade security features](https://github.com/security/advanced-security)
+    - [Copilot for BusinessEnterprise-grade AI features](https://github.com/features/copilot/copilot-business)
+    - [Premium SupportEnterprise-grade 24/7 support](https://github.com/premium-support)
+* [Pricing](https://github.com/pricing)
+
+
+
+Search or jump to...
+
+
+
+
+Search code, repositories, users, issues, pull requests...
+==========================================================
+
+ 
+Search
+
+
+
+
+Clear
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+[Search syntax tips](https://docs.github.com/search-github/github-code-search/understanding-github-code-search-syntax) 
+
+
+
+
+
+
+
+Provide feedback
+================
+
+
+
+
+
+ 
+
+We read every piece of feedback, and take your input very seriously.
+
+
+
+Include my email address so I can be contacted
+
+
+  Cancel
+
+ Submit feedback
+
+
+
+Saved searches
+==============
+
+Use saved searches to filter your results more quickly
+------------------------------------------------------
+
+
+
+
+
+ 
+
+Name
+
+
+
+
+Query
+
+To see all available qualifiers, see our [documentation](https://docs.github.com/search-github/github-code-search/understanding-github-code-search-syntax).
+
+ 
+
+
+
+
+  Cancel
+
+ Create saved search
+
+
+
+
+
+
+[Sign in](/login?return_to=https%3A%2F%2Fgithub.com%2Fwanikua%2Fdanghuangshang)
+
+[Sign up](/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=wanikua%2Fdanghuangshang)
+ 
+
+
+Appearance settings
+
+
+
+
+
+Resetting focus
+
+
+
+
+
+You signed in with another tab or window. Reload to refresh your session.
+You signed out in another tab or window. Reload to refresh your session.
+You switched accounts on another tab or window. Reload to refresh your session.
+ 
+
+
+Dismiss alert
+
+
+
+{{ message }}
+
+
+
+
+
+[wanikua](/wanikua) 
+/
+**[danghuangshang](/wanikua/danghuangshang)**
+Public
+
+
+* [Notifications](/login?return_to=%2Fwanikua%2Fdanghuangshang) You must be signed in to change notification settings
+* [Fork
+  152](/login?return_to=%2Fwanikua%2Fdanghuangshang)
+* [Star
+   1.8k](/login?return_to=%2Fwanikua%2Fdanghuangshang)
+
+
+
+* [Code](/wanikua/danghuangshang)
+* [Issues
+  32](/wanikua/danghuangshang/issues)
+* [Pull requests
+  0](/wanikua/danghuangshang/pulls)
+* [Discussions](/wanikua/danghuangshang/discussions)
+* [Actions](/wanikua/danghuangshang/actions)
+* [Projects](/wanikua/danghuangshang/projects)
+* [Security
+  0](/wanikua/danghuangshang/security)
+* [Insights](/wanikua/danghuangshang/pulse)
+
+ 
+ 
+
+
+Additional navigation options
+ 
+
+* [Code](/wanikua/danghuangshang)
+* [Issues](/wanikua/danghuangshang/issues)
+* [Pull requests](/wanikua/danghuangshang/pulls)
+* [Discussions](/wanikua/danghuangshang/discussions)
+* [Actions](/wanikua/danghuangshang/actions)
+* [Projects](/wanikua/danghuangshang/projects)
+* [Security](/wanikua/danghuangshang/security)
+* [Insights](/wanikua/danghuangshang/pulse)
+
+
+ 
+
+
+
+   
+
+wanikua/danghuangshang
+======================
+
+
+ main[Branches](/wanikua/danghuangshang/branches)[Tags](/wanikua/danghuangshang/tags)Go to fileCodeOpen more actions menu
+
+Folders and files
+-----------------
+
+| Name | Name | Last commit message | Last commit date |
+| --- | --- | --- | --- |
+| Latest commit History[307 Commits](/wanikua/danghuangshang/commits/main/)307 Commits |
+| [.github/workflows](/wanikua/danghuangshang/tree/main/.github/workflows) | [.github/workflows](/wanikua/danghuangshang/tree/main/.github/workflows) |  |  |
+| [docker](/wanikua/danghuangshang/tree/main/docker) | [docker](/wanikua/danghuangshang/tree/main/docker) |  |  |
+| [docs](/wanikua/danghuangshang/tree/main/docs) | [docs](/wanikua/danghuangshang/tree/main/docs) |  |  |
+| [evidence](/wanikua/danghuangshang/tree/main/evidence) | [evidence](/wanikua/danghuangshang/tree/main/evidence) |  |  |
+| [extensions](/wanikua/danghuangshang/tree/main/extensions) | [extensions](/wanikua/danghuangshang/tree/main/extensions) |  |  |
+| [gui](/wanikua/danghuangshang/tree/main/gui) | [gui](/wanikua/danghuangshang/tree/main/gui) |  |  |
+| [images](/wanikua/danghuangshang/tree/main/images) | [images](/wanikua/danghuangshang/tree/main/images) |  |  |
+| [scripts](/wanikua/danghuangshang/tree/main/scripts) | [scripts](/wanikua/danghuangshang/tree/main/scripts) |  |  |
+| [skills](/wanikua/danghuangshang/tree/main/skills) | [skills](/wanikua/danghuangshang/tree/main/skills) |  |  |
+| [.dockerignore](/wanikua/danghuangshang/blob/main/.dockerignore) | [.dockerignore](/wanikua/danghuangshang/blob/main/.dockerignore) |  |  |
+| [.gitignore](/wanikua/danghuangshang/blob/main/.gitignore) | [.gitignore](/wanikua/danghuangshang/blob/main/.gitignore) |  |  |
+| [BUG-REPORT.md](/wanikua/danghuangshang/blob/main/BUG-REPORT.md) | [BUG-REPORT.md](/wanikua/danghuangshang/blob/main/BUG-REPORT.md) |  |  |
+| [CHANGELOG.md](/wanikua/danghuangshang/blob/main/CHANGELOG.md) | [CHANGELOG.md](/wanikua/danghuangshang/blob/main/CHANGELOG.md) |  |  |
+| [CONTRIBUTING.md](/wanikua/danghuangshang/blob/main/CONTRIBUTING.md) | [CONTRIBUTING.md](/wanikua/danghuangshang/blob/main/CONTRIBUTING.md) |  |  |
+| [Dockerfile](/wanikua/danghuangshang/blob/main/Dockerfile) | [Dockerfile](/wanikua/danghuangshang/blob/main/Dockerfile) |  |  |
+| [ITERATION-PLAN.md](/wanikua/danghuangshang/blob/main/ITERATION-PLAN.md) | [ITERATION-PLAN.md](/wanikua/danghuangshang/blob/main/ITERATION-PLAN.md) |  |  |
+| [LICENSE](/wanikua/danghuangshang/blob/main/LICENSE) | [LICENSE](/wanikua/danghuangshang/blob/main/LICENSE) |  |  |
+| [README.md](/wanikua/danghuangshang/blob/main/README.md) | [README.md](/wanikua/danghuangshang/blob/main/README.md) |  |  |
+| [README\_EN.md](/wanikua/danghuangshang/blob/main/README_EN.md) | [README\_EN.md](/wanikua/danghuangshang/blob/main/README_EN.md) |  |  |
+| [docker-compose.yml](/wanikua/danghuangshang/blob/main/docker-compose.yml) | [docker-compose.yml](/wanikua/danghuangshang/blob/main/docker-compose.yml) |  |  |
+| [doctor.sh](/wanikua/danghuangshang/blob/main/doctor.sh) | [doctor.sh](/wanikua/danghuangshang/blob/main/doctor.sh) |  |  |
+| [duchayuan-review.yml](/wanikua/danghuangshang/blob/main/duchayuan-review.yml) | [duchayuan-review.yml](/wanikua/danghuangshang/blob/main/duchayuan-review.yml) |  |  |
+| [install-lite.sh](/wanikua/danghuangshang/blob/main/install-lite.sh) | [install-lite.sh](/wanikua/danghuangshang/blob/main/install-lite.sh) |  |  |
+| [install-mac.sh](/wanikua/danghuangshang/blob/main/install-mac.sh) | [install-mac.sh](/wanikua/danghuangshang/blob/main/install-mac.sh) |  |  |
+| [install.sh](/wanikua/danghuangshang/blob/main/install.sh) | [install.sh](/wanikua/danghuangshang/blob/main/install.sh) |  |  |
+| [keepalive.sh](/wanikua/danghuangshang/blob/main/keepalive.sh) | [keepalive.sh](/wanikua/danghuangshang/blob/main/keepalive.sh) |  |  |
+| [openclaw.example.json](/wanikua/danghuangshang/blob/main/openclaw.example.json) | [openclaw.example.json](/wanikua/danghuangshang/blob/main/openclaw.example.json) |  |  |
+| [飞书配置指南.md](/wanikua/danghuangshang/blob/main/%E9%A3%9E%E4%B9%A6%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.md) | [飞书配置指南.md](/wanikua/danghuangshang/blob/main/%E9%A3%9E%E4%B9%A6%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.md) |  |  |
+| View all files |
+
+Repository files navigation
+---------------------------
+
+* [README](#)
+* [Contributing](#)
+* [MIT license](#)
+* [Security](#)
+
+[English Version](/wanikua/danghuangshang/blob/main/README_EN.md) | [🏢 企业版 Become CEO (English)](https://github.com/wanikua/become-ceo) | [📚 完整文档](/wanikua/danghuangshang/blob/main/docs/README.md)
+
+> **⚠️ 维权声明 / Originality Notice**
+> 
+> 本项目是「三省六部 × OpenClaw」架构的 **首发作品**，架构设计、角色功能映射、目录结构均为本项目原创。时间线：
+> 
+> * **2025-02-20**：小红书首发教程
+> * **2025-02-22**：GitHub 完整教程发布
+> 
+> **📋 已知侵权**：[Edict](https://github.com/cft0808/edict) 项目结构与本项目高度相似，未注明引用任何出处。经多次沟通，作者拒绝标注原创出处。
+> 
+> 🔗 [原创证据链 & 维权文章](/wanikua/danghuangshang/blob/main/docs/originality.md)
+
+> **🤝 欢迎共创**：本项目是MIT License，欢迎 PR 贡献、Fork 二次开发。但请**注明出处**并保留License。
+> 这是开源社区的基本礼仪，也是对每一位贡献者的尊重。
+
+[![]()](/wanikua/danghuangshang/blob/main/images/boluobobo-mascot.png)
+
+🏛️ 当皇上 ✖️ OpenClaw
+==================
+
+
+### 一行命令起王朝，三省六部皆AI。千里之外调百官，万事不劳御驾亲。
+
+> **以明朝内阁制为蓝本，用 [OpenClaw](https://github.com/openclaw/openclaw) 框架构建的多 Agent 协作系统。**
+> 一台服务器 + OpenClaw = 一支 7×24 在线的 AI 朝廷。
+
+[![]()](https://camo.githubusercontent.com/66c1178a863e8cc4740b2881eed8615a1616f7498ab1f19689de20290d436fb6/68747470733a2f2f696d672e736869656c64732e696f2f62616467652fe69eb6e69e842de6988ee69c9de58685e99881e588b62d676f6c643f7374796c653d666f722d7468652d6261646765)
+[![]()](https://camo.githubusercontent.com/025602f4cb209b7aac64957063ce4eb494b89dfc942b3c2738577d0c89765276/68747470733a2f2f696d672e736869656c64732e696f2f62616467652fe6a186e69eb62d4f70656e436c61772d626c75653f7374796c653d666f722d7468652d6261646765)
+[![]()](https://camo.githubusercontent.com/4b5230251c02465584bbe5db6fdd68cfd6cdf40542989efab349529de14bcec9/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4167656e742d31382b2d677265656e3f7374796c653d666f722d7468652d6261646765)
+[![]()](https://camo.githubusercontent.com/fcb67d966f12f2458bd6f6935940bbe9fc8999a886f60420af867cd961f94eb3/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f536b696c6c2d36302b2d6f72616e67653f7374796c653d666f722d7468652d6261646765)
+[![]()](https://camo.githubusercontent.com/6f99d1dee5071c5895fa1c67c12a8ceee12a1f2910f7e19e9b9aacd92f1bd28c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652fe983a8e7bdb22d35e58886e9929f2d7265643f7374796c653d666f722d7468652d6261646765)
+
+### 👑 一键登基
+
+
+```
+bash <(curl -fsSL https://raw.githubusercontent.com/wanikua/danghuangshang/main/install.sh)
+```
+
+**一行命令，5 分钟，你就是皇上。** [→ 快速开始](#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B)
+
+[![]()](/wanikua/danghuangshang/blob/main/images/flow-architecture.png)
+
+[![]()](/wanikua/danghuangshang/blob/main/images/discord-architecture.png)
+
+---
+
+**AI 朝廷**是一个开箱即用的多 Agent 协作系统。你是皇帝，AI 是你的大臣。在 Discord 或飞书 @某个 Agent，大臣们就会立刻执行。司礼监接旨、内阁优化 Prompt、六部各司其职、都察院自动审查代码。**管理 AI 团队的高效模版。**
+
+目录
+--
+
+* 🚀 [**快速开始**](#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B) — 3 步安装
+* 🏛️ [朝廷架构](#%E6%9C%9D%E5%BB%B7%E6%9E%B6%E6%9E%84) — 明朝内阁制：皇帝→司礼监→内阁→六部→都察院
+* 🎬 [效果展示](#%E6%95%88%E6%9E%9C%E5%B1%95%E7%A4%BA) — Discord / 飞书 对话示例
+* 📝 [翰林院](#%E7%BF%B0%E6%9E%97%E9%99%A2) — 5 Agent 协作写小说（可选）
+* ⚙️ [核心能力](#%E6%A0%B8%E5%BF%83%E8%83%BD%E5%8A%9B) — 协作、记忆、60+ Skill、Cron、沙箱
+* 🆚 [为什么选这套方案？](#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E8%BF%99%E5%A5%97%E6%96%B9%E6%A1%88) — 与 ChatGPT / AutoGPT / CrewAI 对比
+* 📦 [更多](#%E6%9B%B4%E5%A4%9A) — GUI · 飞书 · Notion · 诊断 · FAQ · 企业版 · 菠萝王朝
+
+---
+
+🚀 快速开始
+------
+
+> 🔴 **新手请用云服务器**，不要在个人电脑上安装。[→ 领一台免费服务器](/wanikua/danghuangshang/blob/main/docs/server-setup.md)
+
+**1. 一键安装**
+
+```
+bash <(curl -fsSL https://raw.githubusercontent.com/wanikua/danghuangshang/main/install.sh)
+```
+
+**2. 按提示填入** LLM API Key + Discord Bot Token
+
+**3. 在 Discord @你的 Bot 说话** — 完成！
+
+> 🏥 遇到问题？`bash <(curl -fsSL https://raw.githubusercontent.com/wanikua/danghuangshang/main/doctor.sh)` 一键诊断
+> 
+> 🤖 不想看文档？把 [这段 Prompt](/wanikua/danghuangshang/blob/main/docs/install-prompt.md) 丢给 AI 助手，让它带你装
+> 
+> 已有 OpenClaw？用精简版：`bash <(curl -fsSL https://raw.githubusercontent.com/wanikua/danghuangshang/main/install-lite.sh)`
+
+---
+
+🏛️ 朝廷架构
+-------
+
+三省六部制是中国古代经典制度。
+**明朝初年** 废丞相，司礼监 + 内阁二元治理。
+本项目的Agent团队协作方式采用更贴近明朝六部的制度。
+
+**方式一：经司礼监调度（默认）**
+
+```
+皇帝（你）下旨
+  ▼
+司礼监（大内总管）── 接旨
+  │
+  ├─→ 内阁（首辅）── Prompt 增强：理解意图、引导追问、生成执行计划
+  │ ←─┘ 返回优化后的 Prompt + Plan
+  │
+  ├─→ @兵部 @户部 @礼部 …（按 Plan 派发）
+  │
+  └─→ 都察院 ── 代码 push 到 GitHub 时自动审查
+       └─→ ✅ 通过 / ❌ 打回修改
+
+```
+
+**方式二：皇帝直接下旨给任意部门**（Discord 多 Bot 模式）
+
+```
+皇帝（你）
+  ├─→ @兵部 写个登录 API        ← 直接指挥，跳过司礼监
+  ├─→ @户部 查本月开销
+  └─→ @都察院 审查这个 PR
+
+```
+> 💡 Discord 多 Bot 模式下，每个部门都是独立 Bot，你可以直接 @任意部门下达指令，无需经过司礼监。复杂任务推荐走司礼监（自动内阁优化），简单任务直接 @对应部门更快。
+
+**查看完整机构表**
+
+| 机构 | 角色 | 在本项目中 |
+| --- | --- | --- |
+| **司礼监** | 大内总管 | 接旨 → 送内阁优化 → 派发六部 |
+| **内阁** | 首辅大学士 | Prompt 增强、追问、生成计划、重大决策审议 |
+| **都察院** | 左都御史 | GitHub push 自动代码审查 |
+| **兵部** | 尚书 | 软件工程：编码、架构、Bug 调试 |
+| **户部** | 尚书 | 财务运营：成本分析、预算管控 |
+| **礼部** | 尚书 | 品牌营销：文案、社媒运营 |
+| **工部** | 尚书 | 运维：DevOps、CI/CD |
+| **吏部** | 尚书 | 项目管理、团队协调 |
+| **刑部** | 尚书 | 法务合规、知识产权 |
+
+**与明朝制度的映射：**
+
+| 明朝 | 本项目 |
+| --- | --- |
+| 皇帝下旨 → 司礼监批红 | 用户 @司礼监 → 接旨调度 |
+| 内阁票拟（起草方案） | 内阁 Prompt 增强 + Plan |
+| 司礼监代批（下发执行） | 用优化后 Prompt 派发六部 |
+| 都察院纠劾百官 | GitHub push 自动审查 |
+| 内阁封驳权 | 内阁可否决不合理方案 |
+
+
+
+---
+
+🎬 效果展示
+------
+
+
+### Discord 模式
+
+
+```
+👑 皇帝：@司礼监 帮朕写个用户登录 API，再查一下这个月花了多少钱
+
+🏛️ 司礼监：遵旨！臣先请内阁优化任务……
+  → @内阁 请首辅审阅此旨，拟定执行计划。
+
+📜 内阁：臣已拟票。
+  【任务一】@兵部 — 编写用户登录 REST API（Node.js + Express + JWT）
+  【任务二】@户部 — 本月 API 支出分析（分部门明细 + 优化建议）
+
+🏛️ 司礼监：内阁拟票已收，开始派发！
+  → @兵部 …（优化后的完整 Prompt）
+  → @户部 …
+
+🏛️ 兵部：✅ 已提交 GitHub：wanikua/auth-api#1
+
+🔍 都察院：代码审查 ✅ 通过 | ⚠️ 建议添加 rate limiting
+
+🏛️ 户部：本月 $23.47，环比 -12%，建议优化兵部 Prompt 省 15%。
+
+```
+> 皇帝下旨 → 司礼监接旨 → **内阁优化** → 司礼监派发 → **都察院审查**。全流程公开可见。
+
+### 飞书模式
+
+
+```
+👤 你：帮我写个用户登录 API，再查一下这个月花了多少钱
+
+🏛️ 司礼监：遵旨，臣先请内阁拟票……
+
+  ……（内阁优化 → 派发 → 执行 → 审查，用户无感）
+
+🏛️ 司礼监：陛下，已办妥：
+  📌 兵部：auth-api 已创建，都察院审查通过 ✅
+  📌 户部：本月 $23.47，环比 -12%
+
+```
+> 飞书模式：用户只和司礼监对话，后台自动走完整流程。
+
+
+---
+
+📝 翰林院 — AI 小说创作（可选）
+-------------------
+
+5 个 Agent 协作写小说：掌院学士（总编排）→ 修撰（架构）→ 编修（写作）→ 检讨（审核）→ 庶吉士（检索）。
+
+```
+用户: "帮我写一部修仙小说"
+  └→ 掌院学士（总编排）
+       ├─ spawn 修撰 → 大纲 + 世界观 + 人物档案
+       ├─ 掌院审批 ✅
+       ├─ spawn 编修 → 逐章写作（每章 ≥ 10,000 字）
+       ├─ spawn 检讨 → 7 维度审核
+       └─ 循环至全书完成 → 终审
+
+```
+
+| Agent | 角色 | 职责 |
+| --- | --- | --- |
+| `hanlin_zhang` | 掌院学士 | 接需求、拆任务、协调、终审 |
+| `hanlin_xiuzhuan` | 修撰 | 大纲、世界观、人物档案 |
+| `hanlin_bianxiu` | 编修 | 逐章写作、归档 |
+| `hanlin_jiantao` | 检讨 | 文笔/逻辑/一致性审核 |
+| `hanlin_shujishi` | 庶吉士 | 搜索前文、检索资料 |
+
+
+
+---
+
+⚙️ 核心能力
+-------
+
+
+| 能力 | 说明 |
+| --- | --- |
+| **多 Agent 协作** | 18+ 独立 Bot，@谁谁回复，@everyone 全员响应 |
+| **内阁前置优化** | 用户指令自动经内阁 Prompt 增强后再派发 |
+| **都察院自动审查** | 代码 push 到 GitHub 自动触发代码审查 |
+| **独立记忆** | 每个 Agent 独立工作区 + memory，越用越懂你 |
+| **60+ Skill** | GitHub、Notion、浏览器、Cron、TTS…… |
+| **定时任务** | 自动写日报/周报、健康检查、代码备份 |
+| **沙箱隔离** | Docker 容器隔离，Agent 代码执行互不干扰 |
+| **多平台** | Discord / 飞书 / Slack / Telegram / WebUI |
+
+
+### 60+ 内置 Skill
+
+
+| 类别 | Skill |
+| --- | --- |
+| 开发 | GitHub（Issue/PR/CI）、Coding Agent |
+| 文档 | Notion（数据库/页面/自动汇报） |
+| 信息 | 浏览器自动化、Web 搜索、Web 抓取 |
+| 自动化 | Cron 定时任务、心跳自检 |
+| 媒体 | TTS 语音、截图、视频帧提取 |
+| 运维 | tmux 远程控制、Shell 命令执行 |
+| 通信 | Discord、Slack、飞书、Telegram… |
+| 扩展 | [OpenClaw Hub](https://github.com/openclaw/openclaw) 社区 Skill |
+
+
+
+---
+
+🖥️ GUI 管理界面
+-----------
+
+内置 Web Dashboard（`gui/` 目录），React + TypeScript + Vite：
+
+[![]()](/wanikua/danghuangshang/blob/main/images/gui-court.png)
+  
+*朝堂总览 — 御座、六部、诸院，在线状态一目了然*
+
+[![]()](/wanikua/danghuangshang/blob/main/images/gui-sessions.png)
+  
+*会话管理 — Token 消耗、消息统计实时追踪*
+
+功能：仪表盘 · 朝堂对话 · 会话管理 · Cron 可视化 · Token 统计 · 系统健康监控
+
+```
+cd danghuangshang/gui && npm install && npm run build
+cd server && npm install
+BOLUO_AUTH_TOKEN=你的密码 node index.js
+# 访问 http://你的服务器IP:18795
+```
+> 三层 GUI：**Web Dashboard** 看状态 → **Discord** 下指令 → **Notion** 查报表
+
+
+📱 接入飞书
+------
+
+飞书插件已内置，无需额外安装。
+
+1. [飞书开放平台](https://open.feishu.cn/app) 创建应用，复制 App ID + Secret
+2. 开启机器人能力，添加事件 `im.message.receive_v1`（WebSocket 长连接）
+3. `openclaw channels add` 选 Feishu，填入凭证
+4. `openclaw gateway restart`，在飞书 @机器人 测试
+
+> 飞书用 WebSocket，**不需要公网 IP**。详见 [docs.openclaw.ai/channels/feishu](https://docs.openclaw.ai/channels/feishu)
+
+
+📝 接入 Notion
+-----------
+
+1. [Notion Integrations](https://www.notion.so/profile/integrations) 创建集成，复制 Secret
+2. `mkdir -p ~/.config/notion && echo "ntn_xxx" > ~/.config/notion/api_key`
+3. 在 Notion 页面点 **··· → Connect to** 授权
+4. 在 Discord：`@司礼监 把今天的工作总结写到 Notion 日报里`
+
+🧠 记忆备份
+------
+
+Agent 的记忆是长期积累的资产，丢失不可逆。内置备份脚本，一行命令守护所有 Agent 记忆。
+
+**备份内容：** 18 个 Agent 的 SQLite 记忆数据库 + 工作区记忆文件 + 核心配置
+
+```
+# 立即备份
+bash scripts/memory-backup.sh
+
+# 查看现有备份
+bash scripts/memory-backup.sh -l
+
+# 从备份恢复
+bash scripts/memory-backup.sh -s daily/2026-03-15.tar.gz
+
+# 预览（不实际执行）
+bash scripts/memory-backup.sh --dry-run
+```
+
+**自动定时备份（推荐）：**
+
+```
+# 每天凌晨 3 点自动备份
+(crontab -l 2>/dev/null; echo "0 3 * * * $HOME/danghuangshang/scripts/memory-backup.sh -q") | crontab -
+```
+
+| 策略 | 保留周期 | 说明 |
+| --- | --- | --- |
+| 每日备份 | 7 天 | 自动清理过期 |
+| 每周备份 | 4 周 | 每周日自动归档 |
+| 每月备份 | 6 个月 | 每月 1 号自动归档 |
+
+> 使用 `sqlite3 .backup` 保证数据库一致性，备份期间不影响 Agent 正常运行。
+
+
+🏥 配置诊断
+------
+
+
+```
+bash <(curl -fsSL https://raw.githubusercontent.com/wanikua/danghuangshang/main/doctor.sh)
+```
+
+**@everyone 不触发？** → 每个 Bot 都要开 Message Content Intent + Server Members Intent（[Discord Developer Portal](https://discord.com/developers/applications) → Bot 页面 → Privileged Gateway Intents）
+
+
+❓ 常见问题
+------
+
+**Q: 能用其他模型吗？** → 能。支持 Anthropic、OpenAI、Gemini、DeepSeek 等，不同部门可用不同模型。
+
+**Q: 每月费用？** → 轻度 $10-15，中度 $20-30。重活用强模型、轻活用快模型可省 5 倍。
+
+**Q: 和 Become CEO 的关系？** → [Become CEO](https://github.com/wanikua/become-ceo) 是英文企业版，同架构，CTO/CFO 代替六部。
+
+> 📖 [完整 FAQ](/wanikua/danghuangshang/blob/main/docs/faq.md)
+
+
+🆚 为什么选这套方案？
+-----------
+
+
+|  | ChatGPT 等 | AutoGPT / CrewAI | **AI 朝廷** |
+| --- | --- | --- | --- |
+| 多 Agent | ❌ 单通才 | ✅ 需写 Python | ✅ 配置文件，零代码 |
+| 记忆 | ⚠️ 单一 | ⚠️ 需接向量库 | ✅ 每 Agent 独立 memory |
+| 工具 | ⚠️ 有限 | ⚠️ 需开发 | ✅ 60+ Skill |
+| 界面 | 网页 | CLI | ✅ Discord 原生 |
+| 部署 | 无需 | Docker + 编码 | ✅ 一键脚本 |
+| 24h 在线 | ❌ | ✅ | ✅ Cron + 心跳 |
+
+**核心优势：不是框架，是成品。** 跑个脚本就能用，在 Discord 里 @谁谁回复。
+
+> 📖 [架构详解](/wanikua/danghuangshang/blob/main/docs/architecture.md) | [与 ChatGPT/AutoGPT/CrewAI 对比](/wanikua/danghuangshang/blob/main/docs/architecture.md)
+
+
+🏢 企业版 Become CEO
+----------------
+
+同架构，CEO/CTO/CFO 代替朝廷六部：
+
+👉 **[Become CEO](https://github.com/wanikua/become-ceo)**
+
+| 朝廷 | 企业 |
+| --- | --- |
+| 司礼监 | COO |
+| 内阁 | CSO |
+| 都察院 | QA VP |
+| 兵部 | CTO |
+| 户部 | CFO |
+| 礼部 | CMO |
+
+
+
+🍍 实战案例：菠萝王朝
+-----------
+
+18 个 Agent，24/7 运行的真实生产系统。
+
+```
+🏯 菠萝王朝
+├── 本纪（时间线）：起居注·朔望录·编年纪·大事记
+├── 表（看板）：食货表·舆情表·臣工表·器用表
+├── 志（知识库）：天工志·宣化志·经籍志·典章志
+└── 列传（项目档案）：11 个项目全生命周期
+
+```
+> 📖 [菠萝王朝详解](/wanikua/danghuangshang/blob/main/docs/pineapple-dynasty.md)
+
+
+---
+
+
+加入朝会
+----
+
+
+| 小红书「菠萝菠菠🍍」 | 公众号「菠言菠语」 | 微信群 |
+| --- | --- | --- |
+|  |  |  |
+
+
+相关链接 · 安全须知 · 免责声明
+
+**相关链接**
+
+* 🏢 [Become CEO — 企业版](https://github.com/wanikua/become-ceo) · 🔧 [OpenClaw 框架](https://github.com/openclaw/openclaw) · 📖 [OpenClaw 文档](https://docs.openclaw.ai) · 📚 [完整文档](/wanikua/danghuangshang/blob/main/docs/README.md)
+* 🎁 [MiniMax Coding Plan](https://platform.minimaxi.com/subscribe/coding-plan?code=CIeSxc2iq2&source=link) — 88折优惠
+
+**安全须知** — 🔴 用云服务器，不要个人电脑 · workspace 设专用目录 · API Key 不提交公开仓库 · [详见](/wanikua/danghuangshang/blob/main/docs/security.md)
+
+**免责声明** — 按"原样"提供，AI 生成内容仅供参考，敏感操作请人工复核。[详见](/wanikua/danghuangshang/blob/main/docs/security.md)
+
+
+---
+
+**🔄 已安装？一键更新：** `bash <(curl -fsSL https://raw.githubusercontent.com/wanikua/danghuangshang/main/install.sh)` · Docker：`docker pull boluobobo/ai-court:latest && docker compose up -d`
+
+v3.5.2 | MIT License | [User Agreement](/wanikua/danghuangshang/blob/main/docs/user-agreement.md) | [Privacy Policy](/wanikua/danghuangshang/blob/main/docs/privacy-policy.md)
+
+> 📜 Licensed under MIT. Credit: [danghuangshang](https://github.com/wanikua/danghuangshang) by [@wanikua](https://github.com/wanikua)
+
+About
+-----
+
+AI 朝廷搭建完整教程 - 从零基础到进阶
+
+
+[danghuangshang.com](https://danghuangshang.com)
+
+### Topics
+
+[tutorial](/topics/tutorial)
+[ai](/topics/ai)
+[discord](/topics/discord)
+[discord-bot](/topics/discord-bot)
+[multi-agent](/topics/multi-agent)
+[workflow-automation](/topics/workflow-automation)
+[autonomous-agents](/topics/autonomous-agents)
+[ai-agents](/topics/ai-agents)
+[ancient-china](/topics/ancient-china)
+[ming-dynasty](/topics/ming-dynasty)
+[llm](/topics/llm)
+[ai-orchestration](/topics/ai-orchestration)
+[ai-collaboration](/topics/ai-collaboration)
+[clawdbot](/topics/clawdbot)
+[openclaw](/topics/openclaw)
+[six-ministries](/topics/six-ministries)
+[ai-court](/topics/ai-court)
+[imperial-china](/topics/imperial-china)
+[san-sheng-liu-bu](/topics/san-sheng-liu-bu)
+[liu-bu-zhi](/topics/liu-bu-zhi)
+
+### Resources
+
+[Readme](#readme-ov-file) 
+### License
+
+[MIT license](#MIT-1-ov-file)
+### Contributing
+
+[Contributing](#contributing-ov-file)
+### Security policy
+
+[Security policy](#security-ov-file)
+
+### Uh oh!
+
+
+
+There was an error while loading. Please reload this page.
+
+
+
+ 
+ 
+
+[Activity](/wanikua/danghuangshang/activity) 
+### Stars
+
+[**1.8k**
+stars](/wanikua/danghuangshang/stargazers) 
+### Watchers
+
+[**6**
+watching](/wanikua/danghuangshang/watchers) 
+### Forks
+
+[**152**
+forks](/wanikua/danghuangshang/forks) 
+[Report repository](/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fwanikua%2Fdanghuangshang&report=wanikua+%28user%29) 
+
+
+
+[Releases
+1](/wanikua/danghuangshang/releases)
+----------------------------------------------
+
+[v3.0 — 文档重构 + Docker 镜像 + 全平台覆盖
+Latest
+ 
+Mar 12, 2026](/wanikua/danghuangshang/releases/tag/v3.0)
+
+
+[Packages
+0](/users/wanikua/packages?repo_name=danghuangshang)
+--------------------------------------------------------------
+
+ 
+
+ 
+
+ 
+
+### Uh oh!
+
+
+
+There was an error while loading. Please reload this page.
+
+
+
+ 
+ 
+
+
+
+[Contributors
+7](/wanikua/danghuangshang/graphs/contributors)
+-------------------------------------------------------------
+
+* [![]()](https://github.com/wanikua)
+* [![]()](https://github.com/claude)
+* [![]()](https://github.com/ultranationalism)
+* [![]()](https://github.com/782042369)
+* [![]()](https://github.com/kenkieo)
+* [![]()](https://github.com/Qliangw)
+* [![]()](https://github.com/KevinShiCN)
+
+
+Languages
+---------
+
+
+
+
+* [Shell
+  43.3%](/wanikua/danghuangshang/search?l=shell)
+* [TypeScript
+  37.3%](/wanikua/danghuangshang/search?l=typescript)
+* [JavaScript
+  17.7%](/wanikua/danghuangshang/search?l=javascript)
+* Other
+  1.7%
+
+
+
+   
+
+
+
+
+
+
+Footer
+------
+
+© 2026 GitHub, Inc.
+
+
+### Footer navigation
+
+* [Terms](https://docs.github.com/site-policy/github-terms/github-terms-of-service)
+* [Privacy](https://docs.github.com/site-policy/privacy-policies/github-privacy-statement)
+* [Security](https://github.com/security)
+* [Status](https://www.githubstatus.com/)
+* [Community](https://github.community/)
+* [Docs](https://docs.github.com/)
+* [Contact](https://support.github.com?tags=dotcom-footer)
+* Manage cookies
+* Do not share my personal information
+
+
+
+
+You can’t perform that action at this time.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

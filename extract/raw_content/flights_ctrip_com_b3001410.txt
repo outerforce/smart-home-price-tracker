@@ -1,0 +1,292 @@
+# Source URL: https://flights.ctrip.com/international/schedule/hgh-kul.html
+# Content Length: 14434 characters
+# Extracted at: 2026-03-18 23:04:48
+#============================================================
+
+
+
+
+
+
+杭州到吉隆坡航班查询,杭州到吉隆坡航班时刻表【携程国际机票】
+
+
+ 
+让旅行更幸福
+
+* Language
+  + [简体中文](//www.ctrip.com)
+  + [English (United States)](https://us.trip.com/?locale=en_US)
+  + [English (United Kingdom)](https://uk.trip.com/?locale=en_gb)
+  + [繁體中文 (中國香港)](http://hk.trip.com/?locale=zh_hk)
+  + [English(Hong Kong,China)](https://hk.trip.com/?locale=en_hk)
+  + [韩语版](https://kr.trip.com/?locale=ko_KR)
+  + [日语版](https://jp.trip.com/?locale=ja_JP)
+  + [English (Singapore)](https://sg.trip.com/?locale=en_SG)
+  + [English (Australia)](https://au.trip.com/?locale=en_au)
+  + [Deutsch](https://de.trip.com/?locale=de_DE)
+  + [Français](https://fr.trip.com/?locale=fr_FR)
+  + [Español](https://es.trip.com/?locale=es_ES)
+  + [Italiano](https://it.trip.com/?locale=it_IT)
+  + [Русский](https://ru.trip.com/?locale=ru_RU)
+  + [泰国站](https://th.trip.com/?locale=th_TH)
+  + [Bahasa Indonesia](https://id.trip.com/?locale=id_ID)
+  + [Bahasa Malaysia](https://my.trip.com/?locale=ms_MY)
+  + [English (Malaysia)](https://my.trip.com/?locale=en_my)
+  + [越南语](https://vn.trip.com/?locale=vi_VN)
+  + [荷兰语](https://nl.trip.com/?locale=nl_NL)
+  + [波兰语>](https://pl.trip.com/?locale=pl_PL)
+  + [希腊语](https://gr.trip.com/?locale=el_GR)
+  + [土耳其语](https://tr.trip.com/?locale=tr_TR)
+  + [巴西葡萄牙语](https://br.trip.com/?locale=pt_BR)
+
+网站无障碍
+
+* 您好，请登录
+* [免费注册](https://passport.dev.qa.nt.ctripcorp.com/user/reg/home )
+* [普通会员](https://my.ctrip.com/myinfo/home)
+  + [![]()](https://sinfo.ctrip.com/MyInfo/AccountCenter/UserInfoUpdate.aspx)
+  + 积分：[0](https://sinfo.dev.qa.nt.ctripcorp.com/MyInfo/AccountCenter/MineMileage.aspx )
+    
+    普通会员领福利
+  + [退出](https://passport.dev.qa.nt.ctripcorp.com/user/logout )
+* 消息0
+* [我的携程](https://my.dev.qa.nt.ctripcorp.com/myinfo/home ) 
+  + [我的收藏](https://my.dev.qa.nt.ctripcorp.com/favorite/myfav#ctm_ref=ssc_hp_myctrip_collect_a )
+  + [我的优惠券](https://smarket.dev.qa.nt.ctripcorp.com/Promocode/zh-cn/Promocode.aspx#ctm_ref=ssc_hp_myctrip_integral_a )
+  + [常用信息](https://my.dev.qa.nt.ctripcorp.com/Home/Passenger/PassengerList.aspx#ctm_ref=ssc_hp_myctrip_info_a )
+  + [我的钱包](https://secure.dev.qa.nt.ctripcorp.com/webwallet/index#ctm_ref=ssc_hp_myctrip_wallet_a )
+* [我的订单](https://my.dev.qa.nt.ctripcorp.com/myinfo/all ) 
+  + [机票+相关订单](https://my.dev.qa.nt.ctripcorp.com/myinfo/flight )
+  + [酒店订单](https://my.dev.qa.nt.ctripcorp.com/myinfo/hotel )
+  + [旅游订单](https://my.dev.qa.nt.ctripcorp.com/myinfo/vacation )
+  + [火车票订单](https://my.dev.qa.nt.ctripcorp.com/myinfo/domestictrain )
+  + [全部订单](https://my.dev.qa.nt.ctripcorp.com/myinfo/all )
+  + [手机号查订单](https://passport.dev.qa.nt.ctripcorp.com/user/member/fastOrder#ctm_ref=ssc_hp_myctrip_phoneorders_a )
+* [客服中心](http://kefu.dev.qa.nt.ctripcorp.com)
+* + ![]()
+    
+    手机扫码快速下载
+  + [携程旅行手机版](http://app.ctrip.com)
+* + ![]()
+    
+    扫一扫
+    
+    了解爆款旅行好货
+
+[携程旅行网](http://www.ctrip.com) 
+
+* 境内：95010
+* （或）400-830-6666
+* 中国香港：+852-3008-3295
+* 中国澳门、中国台湾：+86-21 3406-4888
+* 其他国家和地区：+86-21-3406-4888
+
+
+* [首页](https://www.ctrip.com/)
+* [酒店](https://hotels.ctrip.com/)
+  + [国内酒店](https://hotels.ctrip.com/)
+  + [海外酒店](https://hotels.ctrip.com/international/?intl=1)[酒店订单 >](https://my.dev.qa.nt.ctripcorp.com/myinfo/hotel)
+* [旅游](https://vacations.ctrip.com/)
+  + [旅游首页](https://vacations.ctrip.com/)
+  + [周末游](https://vacations.ctrip.com/around)
+  + [跟团游](https://vacations.ctrip.com/grouptravel/)
+  + [自由行](https://vacations.ctrip.com/idiytour)
+  + [私家团](https://vacations.ctrip.com/privategroup)
+  + [邮轮](https://cruise.ctrip.com/)
+  + [门票·活动](https://huodong.ctrip.com/things-to-do/list?)
+  + [一日游](https://huodong.ctrip.com/things-to-do/list?pshowcode=1daytrip&sourceFrom=vacation)
+  + [主题游](https://vacations.ctrip.com/themetravel/)
+  + [定制旅行](https://vacations.ctrip.com/customtravel)
+  + [游学](https://vacations.ctrip.com/youxue)
+  + [签证](https://vacations.ctrip.com/visa)
+  + [企业会奖](https://mice.ctrip.com)
+  + [高端游](https://www.hhtravel.com/#ctm_ref=hh_ct_thp_nav)
+  + [爱玩户外](http://fun.iwanoutdoor.com/)
+  + [保险](https://vacations.ctrip.com/ins)[旅游订单 >](https://my.dev.qa.nt.ctripcorp.com/myinfo/vacation)
+* [跟团游](https://vacations.ctrip.com/grouptravel)
+* [自由行](https://vacations.ctrip.com/idiytour)
+* [机票](https://flights.ctrip.com/)
+  + [国内/国际·中国港澳台机票](https://flights.ctrip.com/international/search/domestic?from=top_nav)
+  + [特价机票](https://flights.ctrip.com/fuzzysearch/search?fromUrl=https%3A%2F%2Fflights.ctrip.com%2Ffuzzy%2F%23ctm_ref%3Dctr_nav_flt_fz_pgs&channel=budgetFare)
+  + [航班动态](https://flights.ctrip.com/actualtime)
+  + [值机选座](https://flights.ctrip.com/domestic/checkinseat/index)
+  + [退票改签](https://my.ctrip.com/myinfo/flight)
+  + [机场攻略](https://flights.ctrip.com/booking/airport-guides.html)
+  + [定制包机](https://flights.ctrip.com/itinerary/charter/book)[机票订单 >](https://my.dev.qa.nt.ctripcorp.com/myinfo/flight)
+* [火车](https://trains.ctrip.com/)
+  + [国内火车票](https://trains.ctrip.com/)
+  + [国际/港台火车票](http://rails.ctrip.com)[火车票订单 >](https://my.ctrip.com/myinfo/domestictrain)
+* [汽车 · 船](https://bus.ctrip.com/)
+  + [汽车票](https://bus.ctrip.com/)
+  + [景区/机场专线](https://pages.c-ctrip.com/bus/pages/travelBus/travelBus.html)
+  + [船票](https://ship.ctrip.com/ship)[汽车票订单 >](https://my.ctrip.com/myinfo/qiche)
+* [用车](https://car.ctrip.com/zuche/landing)
+  + [国内租车](https://car.ctrip.com/zijia#ctm_ref=chp_var_txt)
+  + [境外租车](https://car.ctrip.com/hwzijia#ctm_ref=chp_var_txt)
+  + [接送机站](https://car.ctrip.com/airport-transfers/index?s=car_back&channelid=2)
+  + [按天包车](https://car.ctrip.com/idayweb) [用车订单 >](https://my.ctrip.com/myinfo/car)
+* [门票](https://huodong.ctrip.com/things-to-do/list?)
+  + [门票·活动](https://huodong.ctrip.com/things-to-do/list?)
+  + [出境WiFi•电话卡](https://huodong.ctrip.com/things-to-do/list/?keyword=%E6%97%A5%E6%9C%AC&pshowcode=Communicationequipment)
+  + [周末游](https://vacations.ctrip.com/around)
+  + [上海海昌](http://piao.ctrip.com/dest/t4651499.html)[门票活动订单 >](https://my.dev.qa.nt.ctripcorp.com/myinfo/activity)
+* [攻略](https://you.ctrip.com/)
+* [全球购](http://g.ctrip.com/)
+  + [名店购](https://g.ctrip.com/)
+  + [旅游购物商城](https://pages.c-ctrip.com/shoppingchic/cshop/index.html)
+  + [银联特惠](https://pages.c-ctrip.com/shoppingchic/unionpay/index.html)
+  + [外币兑换](https://forex.ctrip.com/?bid=62&1=1)
+* [礼品卡](https://lipin.ctrip.com)
+  + [礼品卡首页](https://lipin.ctrip.com)
+  + [节日/主题购卡](https://lipin.ctrip.com/lipinonline/theme)
+  + [礼品卡福袋](https://lipin.ctrip.com/xcb)
+  + [企业采购](https://lipin.ctrip.com/lipinonline/static/intentional)
+  + [兑换券](https://lipin.ctrip.com/lipinonline/voucher)
+  + [外币兑换](https://forex.ctrip.com/?bid=12&1=1)[礼品卡订单 >](https://my.ctrip.com/myinfo/giftcard)
+* [商旅](https://ct.ctrip.com/?ctm_ref=xcct)
+  + [商旅首页](https://ct.ctrip.com/?ctm_ref=xcct)
+  + [企业客户注册](https://ct.ctrip.com/biztravel/registry/index?ctm_ref=xcpt)
+  + [会议旅游](https://mice.ctrip.com)
+* [邮轮](https://cruise.ctrip.com)
+* [目的地](https://dst.ctrip.com/)
+* [金融](https://jr.ctrip.com/#/?clientSource=CTRIP)
+* [更多](https://mall.ctrip.com)
+  + [会员商城](https://mall.ctrip.com)
+  + [超级会员](https://pages.c-ctrip.com/commerce/dy1/index10.html)
+  + [合作卡](https://m.ctrip.com/webapp/cards/index)
+
+
+[{"id":"14","onlinetime":"2019/12/31 23:55:04$2200/08/08 16:19:09"},{"id":"15","onlinetime":"2018/12/13 08:23:32$2180/12/31 23:55:09"}]- [国际机票查询](https://flights.ctrip.com/international/) >
+  [国际航班查询时刻表](/international/search/schedule/) >
+  [杭州航班查询](hgh-in.html) >
+  
+  杭州到吉隆坡航班查询
+  ==========
+  
+  
+  ### 按出发城市
+  
+  热门航线：
+  [胡志明市到北京时刻表](/international/search/schedule/sgn-bjs.html)
+  [普吉岛到上海时刻表](/international/search/schedule/hkt-sha.html)
+  
+  
+  
+  ### 按航班号
+  
+  航班号  
+  
+  航班时刻查询
+  
+  热门航班：[UA088](/international/search/schedule/flightsearch.html?flightNo=UA088)
+  
+  
+  
+  您正在查看携程为您提供的**杭州到吉隆坡航班时刻表**，携程同时提供[吉隆坡到杭州机票查询](https://flights.ctrip.com/international/search/round-KUL-HGH?depdate=2026-03-25_2026-04-01&cabin=y&adult=1)以及[吉隆坡酒店预订服务。](http://hotels.ctrip.com/international/
+  kuala lumpur315)
+  
+  * 杭州到吉隆坡航班时刻表
+  * 吉隆坡到杭州航班时刻表
+  * | 起飞/到达时间 | 航空公司/航班号 | 出发机场 | 到达机场 | 机型 | 经停 | 班期 |
+    | --- | --- | --- | --- | --- | --- | --- |
+    | 08:50->14:30 | 东方航空/MU5095 | 萧山国际机场T4 | 吉隆坡国际机场T1 | 空客320 | - | - |
+    | --- | --- | --- | --- | --- | --- | --- |
+    | 09:15->14:45 | 厦门航空/MF8713 | 萧山国际机场T4 | 吉隆坡国际机场T1 | 波音737 | - | - |
+    | 14:25->20:05 | 马来西亚亚航长途/D7303 | 萧山国际机场T4 | 吉隆坡国际机场T2 | 空客330-300 | - | - |
+    | 08:50->14:30 | 上海航空/FM3059 | 萧山国际机场T4 | 吉隆坡国际机场T1 | 空客320 | - | - |
+    | 07:45->13:10 | 马来西亚亚航长途/D7302 | 吉隆坡国际机场T2 | 萧山国际机场T4 | 空客330-300 | - | - |
+    | --- | --- | --- | --- | --- | --- | --- |
+    | 15:30->20:40 | 东方航空/MU5096 | 吉隆坡国际机场T1 | 萧山国际机场T4 | 空客320 | - | - |
+    | 15:45->21:00 | 厦门航空/MF8714 | 吉隆坡国际机场T1 | 萧山国际机场T4 | 波音737 | - | - |
+    | 15:30->20:40 | 上海航空/FM3060 | 吉隆坡国际机场T1 | 萧山国际机场T4 | 空客320 | - | - |
+  
+  ### 杭州特价国际机票-出发
+  
+  * [杭州到中国香港](https://flights.ctrip.com/international/search/round-HGH-hkg?depdate=2026-03-25_2026-04-01&cabin=y&adult=1)
+  * [杭州到中国台北](https://flights.ctrip.com/international/search/round-HGH-tpe?depdate=2026-03-25_2026-04-01&cabin=y&adult=1)
+  * [杭州到中国澳门](https://flights.ctrip.com/international/search/round-HGH-mfm?depdate=2026-03-25_2026-04-01&cabin=y&adult=1)
+  * [杭州到新加坡](https://flights.ctrip.com/international/search/round-HGH-sin?depdate=2026-03-25_2026-04-01&cabin=y&adult=1)
+  * [杭州到悉尼(澳大利亚)](https://flights.ctrip.com/international/search/round-HGH-syd?depdate=2026-03-25_2026-04-01&cabin=y&adult=1)
+  * [杭州到首尔](https://flights.ctrip.com/international/search/round-HGH-sel?depdate=2026-03-25_2026-04-01&cabin=y&adult=1)
+  * [杭州到伦敦(英国)](https://flights.ctrip.com/international/search/round-HGH-lon?depdate=2026-03-25_2026-04-01&cabin=y&adult=1)
+  * [杭州到东京](https://flights.ctrip.com/international/search/round-HGH-tyo?depdate=2026-03-25_2026-04-01&cabin=y&adult=1)
+  * [杭州到中国高雄](https://flights.ctrip.com/international/search/round-HGH-khh?depdate=2026-03-25_2026-04-01&cabin=y&adult=1)[杭州更多到达机票>>](../hgh-17-incity.html)
+  
+  
+  ### 吉隆坡特价国际机票-到达
+  
+  * [上海到吉隆坡](https://flights.ctrip.com/international/search/round-sha-KUL?depdate=2026-03-25_2026-04-01&cabin=y&adult=1)
+  * [北京到吉隆坡](https://flights.ctrip.com/international/search/round-bjs-KUL?depdate=2026-03-25_2026-04-01&cabin=y&adult=1)
+  * [广州到吉隆坡](https://flights.ctrip.com/international/search/round-can-KUL?depdate=2026-03-25_2026-04-01&cabin=y&adult=1)
+  * [厦门到吉隆坡](https://flights.ctrip.com/international/search/round-xmn-KUL?depdate=2026-03-25_2026-04-01&cabin=y&adult=1)
+  * [中国香港到吉隆坡](https://flights.ctrip.com/international/search/round-hkg-KUL?depdate=2026-03-25_2026-04-01&cabin=y&adult=1)
+  * [杭州到吉隆坡](https://flights.ctrip.com/international/search/round-hgh-KUL?depdate=2026-03-25_2026-04-01&cabin=y&adult=1)
+  * [福州到吉隆坡](https://flights.ctrip.com/international/search/round-foc-KUL?depdate=2026-03-25_2026-04-01&cabin=y&adult=1)
+  * [成都到吉隆坡](https://flights.ctrip.com/international/search/round-ctu-KUL?depdate=2026-03-25_2026-04-01&cabin=y&adult=1)
+  * [南京到吉隆坡](https://flights.ctrip.com/international/search/round-nkg-KUL?depdate=2026-03-25_2026-04-01&cabin=y&adult=1)[吉隆坡更多到达机票>>](../kul-315-incity.html)
+  
+  
+  
+  
+  
+  
+  ### 热门杭州出发时刻表
+  
+  [杭州到中国香港航班时刻表](hgh-hkg.html)
+  [杭州到中国台北航班时刻表](hgh-tpe.html)
+  [杭州到中国澳门航班时刻表](hgh-mfm.html)
+  [杭州到新加坡航班时刻表](hgh-sin.html)
+  [杭州到悉尼(澳大利亚)航班时刻表](hgh-syd.html)
+  [杭州到首尔航班时刻表](hgh-sel.html)
+  [杭州到伦敦(英国)航班时刻表](hgh-lon.html)
+  [杭州到东京航班时刻表](hgh-tyo.html)
+  [杭州到中国高雄航班时刻表](hgh-khh.html)
+  [杭州到普吉岛航班时刻表](hgh-hkt.html)
+  [杭州到曼谷航班时刻表](hgh-bkk.html)
+  [杭州到吉隆坡航班时刻表](hgh-kul.html)
+  [杭州到奥克兰(新西兰)航班时刻表](hgh-akl.html)
+  [杭州到河内航班时刻表](hgh-han.html)
+  [杭州到洛杉矶(美国)航班时刻表](hgh-lax.html)
+  
+  
+  
+  ### 热门吉隆坡到达时刻表
+  
+  [上海到吉隆坡航班时刻表](sha-kul.html)
+  [北京到吉隆坡航班时刻表](bjs-kul.html)
+  [广州到吉隆坡航班时刻表](can-kul.html)
+  [厦门到吉隆坡航班时刻表](xmn-kul.html)
+  [中国香港到吉隆坡航班时刻表](hkg-kul.html)
+  [杭州到吉隆坡航班时刻表](hgh-kul.html)
+  [福州到吉隆坡航班时刻表](foc-kul.html)
+  [成都到吉隆坡航班时刻表](ctu-kul.html)
+  [南京到吉隆坡航班时刻表](nkg-kul.html)
+  [新加坡到吉隆坡航班时刻表](sin-kul.html)
+  [青岛到吉隆坡航班时刻表](tao-kul.html)
+  [沈阳到吉隆坡航班时刻表](she-kul.html)
+  [大连到吉隆坡航班时刻表](dlc-kul.html)
+  [哈尔滨到吉隆坡航班时刻表](hrb-kul.html)
+  [昆明到吉隆坡航班时刻表](kmg-kul.html)
+
+ 　
+
+[网站导航](http://pages.ctrip.com/public/sitemap/sitemap.htm) | [宾馆索引](http://hotels.ctrip.com/jiudian/) | [机票索引](http://flights.ctrip.com/booking/hot-city-flights-sitemap.html ) | [旅游索引](http://pages.ctrip.com/public/sitemap/dj.html) | [商旅索引](https://ct.ctrip.com/biztravel/webmap/index?ctm_ref=sme001) | [攻略索引](http://you.ctrip.com/sitemap/) | [关于携程](http://pages.ctrip.com/public/ctripab/abctrip.htm) | [企业公民](http://pages.ctrip.com/commerce/promote/201201/other/qygm/index.html) | [诚聘英才](https://careers.ctrip.com/) | [智慧旅游](http://you.ctrip.com/Intelligence.html)  | [分销联盟](http://u.ctrip.com/) | [代理合作](http://pages.ctrip.com/public/dlhz.htm) | [企业商旅](http://ct.ctrip.com) | [中小企业差旅](https://ct.ctrip.com/?ctm_ref=sme001) | [联系我们](http://pages.ctrip.com/public/contact.htm)
+
+[加盟合作](http://pages.c-ctrip.com/cooperation/web/cooperation.html#ctm_ref=ctr_hp_btm_coop) | [酒店加盟](http://ebooking.ctrip.com/ebkovsassembly/HotelApply?type=1&channel=1&lang=0) | [目的地及景区合作](http://dst.ctrip.com/) | [用户协议](https://contents.ctrip.com/huodong/privacypolicypc/index?type=0) | [隐私政策](https://contents.ctrip.com/huodong/privacypolicypc/index?type=1) | [营业执照](http://pages.ctrip.com/public/diploma/company.htm) | [旅游度假资质](http://m.ctrip.com/webapp/vacations/tour/supplier) | [保险代理](http://www.ctripins.com/index.html) | [友情链接](http://pages.ctrip.com/public/link/ctrip_link.html)
+
+[Copyright©](http://pages.ctrip.com/public/copyright.htm), [ctrip.com](http://www.ctrip.com/). All rights reserved. | [ICP证：沪B2-20050130](https://pages.c-ctrip.com/nfes/pchome/icp.pdf?t=20220325) | [沪ICP备08023580号-3](http://beian.miit.gov.cn/)
+
+
+
+[沪公网备31010502002731号](http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010502002731)丨[互联网药品信息服务资格证](https://pages.c-ctrip.com/nfes/pchome/InternetDrugCertificate.pdf?xx=11)丨[（沪）网械平台备字[2022]第00001号](https://pages.c-ctrip.com/nfes/yiliao.pdf?xx=11)丨[旅游度假资质](http://m.ctrip.com/webapp/vacations/tour/supplier)
+
+[信用评级](http://www.cecpsp.org.cn/index.credit?action=certDetail&id=40288084605466f1016057ea4cb20021)[上海工商](http://scjgj.sh.gov.cn/)[网络社会征信网](http://www.zx110.org/)[信息举报中心](http://www.shjbzx.cn/)[可信网站](https://ss.knet.cn/verifyseal.dll?sn=e12061531010025926306977)
+
+[信用中国](http://www.creditchina.gov.cn/)[网上有害信息举报专区](https://www.12377.cn/)[消费维权联络点](https://im-synthesize.ctrip.com/complaints/rights/AppealCreate)[网购大家评](https://fw.scjgj.sh.gov.cn/platform/survey/step1_phone)适老化及无障碍标识
+
+
+
+
+
+
